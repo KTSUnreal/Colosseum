@@ -1,0 +1,878 @@
+﻿Log file open, 12/18/16 21:06:22
+LogInit:Display: Running engine for game: Colluseum
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1011198874) SRandInit(-1011198872).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.073724
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: D:/Program Files/EPIC/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.12.19-05.06.22:897][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.19-05.06.22:897][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.12.19-05.06.22:907][  0]LogInit: Computer: DESKTOP-TAF0IGL
+[2016.12.19-05.06.22:907][  0]LogInit: User: tyler
+[2016.12.19-05.06.22:907][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.12.19-05.06.22:907][  0]LogInit: High frequency timer resolution =3.312793 MHz
+[2016.12.19-05.06.22:907][  0]LogMemory: Memory total: Physical=11.9GB (12GB approx)
+[2016.12.19-05.06.22:907][  0]LogMemory: Platform Memory Stats for Windows
+[2016.12.19-05.06.22:907][  0]LogMemory: Process Physical Memory: 190.62 MB used, 190.62 MB peak
+[2016.12.19-05.06.22:907][  0]LogMemory: Process Virtual Memory: 195.31 MB used, 195.31 MB peak
+[2016.12.19-05.06.22:907][  0]LogMemory: Physical Memory: 6858.72 MB used, 12223.61 MB total
+[2016.12.19-05.06.22:907][  0]LogMemory: Virtual Memory: 553.60 MB used, 134217728.00 MB total
+[2016.12.19-05.06.22:942][  0]LogTextLocalizationManager: No specific translations for ('en-CA') exist, so ('en') translations will be used.
+[2016.12.19-05.06.23:315][  0]LogD3D11RHI: D3D11 adapters:
+[2016.12.19-05.06.23:344][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.12.19-05.06.23:344][  0]LogD3D11RHI:       4059/0/6111 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.12.19-05.06.23:346][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.12.19-05.06.23:346][  0]LogD3D11RHI:       0/0/6111 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.12.19-05.06.23:346][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.12.19-05.06.23:351][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.12.19-05.06.23:351][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2016.12.19-05.06.23:351][  0]LogWindows: EnumDisplayDevices:
+[2016.12.19-05.06.23:351][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2016.12.19-05.06.23:351][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2016.12.19-05.06.23:351][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.12.19-05.06.23:352][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.12.19-05.06.23:352][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.12.19-05.06.23:352][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.12.19-05.06.23:352][  0]LogD3D11RHI:   Driver Version: 372.90 (internal:21.21.13.7290, unified:372.90)
+[2016.12.19-05.06.23:352][  0]LogD3D11RHI:      Driver Date: 9-16-2016
+[2016.12.19-05.06.23:352][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.12.19-05.06.23:364][  0]LogD3D11RHI: Async texture creation enabled
+[2016.12.19-05.06.23:374][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.12.19-05.06.23:375][  0]LogShaderCompilers: Guid format shader working directory is -10 characters bigger than the processId version (../../../../../../../Documents/Unreal Projects/Colluseum/Intermediate/Shaders/WorkingDirectory/2732/).
+[2016.12.19-05.06.23:375][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/tyler/AppData/Local/Temp/UnrealShaderWorkingDir/7AF1A857400E71D8A9AB0DB1183B7985/'.
+[2016.12.19-05.06.23:375][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.12.19-05.06.24:303][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.12.19-05.06.24:314][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.12.19-05.06.24:323][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.12.19-05.06.24:332][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.12.19-05.06.24:342][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.12.19-05.06.24:350][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.12.19-05.06.24:358][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.12.19-05.06.24:366][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.12.19-05.06.24:373][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.12.19-05.06.24:381][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.12.19-05.06.24:391][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.12.19-05.06.24:406][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.12.19-05.06.24:406][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.12.19-05.06.24:407][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.12.19-05.06.24:428][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.12.19-05.06.24:435][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.12.19-05.06.24:442][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.12.19-05.06.24:450][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.12.19-05.06.24:458][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.12.19-05.06.24:458][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.12.19-05.06.24:542][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../../Documents/Unreal Projects/Colluseum/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../../Documents/Unreal Projects/Colluseum/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.12.19-05.06.24:588][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.12.19-05.06.24:604][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.12.19-05.06.24:616][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tyler/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.12.19-05.06.24:841][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.19-05.06.24:842][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.12.19-05.06.25:006][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.12.19-05.06.25:006][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.12.19-05.06.25:006][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.12.19-05.06.25:245][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2016.12.19-05.06.25:283][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.034766 seconds
+[2016.12.19-05.06.25:287][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.12.19-05.06.25:287][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.12.19-05.06.25:287][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.12.19-05.06.25:293][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.12.19-05.06.25:453][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.19-05.06.25:453][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.19-05.06.26:288][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.12.19-05.06.26:535][  0]SourceControl: Info Source control is disabled
+[2016.12.19-05.06.26:581][  0]SourceControl: Info Source control is disabled
+[2016.12.19-05.06.26:595][  0]SourceControl: Info Source control is disabled
+[2016.12.19-05.06.26:608][  0]SourceControl: Info Source control is disabled
+[2016.12.19-05.06.26:911][  0]LogEngine: Initializing Engine...
+[2016.12.19-05.06.26:912][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.12.19-05.06.26:913][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.12.19-05.06.27:039][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.12.19-05.06.27:046][  0]LogInit: XAudio2 using 'Speakers / Headphones (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.19-05.06.27:055][  0]LogInit: FAudioDevice initialized.
+[2016.12.19-05.06.27:080][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.19-05.06.27:086][  0]LogInit: Texture streaming: Enabled
+[2016.12.19-05.06.27:107][  0]LogInit: Transaction tracking system initialized
+[2016.12.19-05.06.27:126][  0]BlueprintLog: New page: Editor Load
+[2016.12.19-05.06.27:193][  0]LocalizationService: Info Localization service is disabled
+[2016.12.19-05.06.27:265][  0]LogConsoleResponse:Display: 
+[2016.12.19-05.06.27:359][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.12.19-05.06.27:359][  0]LogCook:Display: Mobile HDR setting 1
+[2016.12.19-05.06.27:478][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/Colluseum/Content/' took 0.01s
+[2016.12.19-05.06.27:478][  0]SourceControl: Info Source control is disabled
+[2016.12.19-05.06.27:478][  0]Cmd: MAP LOAD FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.12.19-05.06.27:479][  0]LightingResults: New page: Lighting Build
+[2016.12.19-05.06.27:481][  0]MapCheck: New page: Map Check
+[2016.12.19-05.06.27:481][  0]LightingResults: New page: Lighting Build
+[2016.12.19-05.06.28:081][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.12.19-05.06.28:538][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.12.19-05.06.28:538][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.12.19-05.06.28:599][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.965ms to complete.
+[2016.12.19-05.06.28:599][  0]LogFileHelpers: Loading map 'Minimal_Default' took 1.121
+[2016.12.19-05.06.29:225][  0]LogCollectionManager: Loaded 0 collections in 0.002862 seconds
+[2016.12.19-05.06.29:270][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/Colluseum/Saved/Collections/' took 0.01s
+[2016.12.19-05.06.29:270][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/Colluseum/Content/Developers/tyler/Collections/' took 0.01s
+[2016.12.19-05.06.29:270][  0]LogFileCache: Scanning file cache for directory 'D:/Documents/Unreal Projects/Colluseum/Content/Collections/' took 0.01s
+[2016.12.19-05.06.29:270][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.12.19-05.06.29:278][  0]LogContentBrowser: Native class hierarchy populated in 0.0079 seconds. Added 2047 classes and 369 folders.
+[2016.12.19-05.06.29:281][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.12.19-05.06.29:281][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.12.19-05.06.29:282][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0007 seconds. Added 12 classes and 0 folders.
+[2016.12.19-05.06.29:286][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.12.19-05.06.29:363][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.12.19-05.06.29:367][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.12.19-05.06.29:434][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.12.19-05.06.29:439][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.12.19-05.06.29:465][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
+[2016.12.19-05.06.29:465][  0]LogLoad: Full Startup: 7.37 seconds (BP compile: 0.01 seconds)
+[2016.12.19-05.06.29:465][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.12.19-05.06.29:465][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.12.19-05.06.29:474][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.12.19-05.06.29:475][  0]LogOcInput: OculusInput pre-init called
+[2016.12.19-05.06.29:499][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.12.19-05.06.29:674][  0]LogRenderer: Reallocating scene render targets to support 1056x512 (Frame:2).
+[2016.12.19-05.06.29:776][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.12.19-05.06.29:801][  1]LogAssetRegistry: Asset discovery search completed in 4.5775 seconds
+[2016.12.19-05.06.29:801][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.12.19-05.06.29:801][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000021 seconds (updated 0 objects)
+[2016.12.19-05.06.37:103][418]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../../Downloads/fuck.fbx)
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: Geometry, ItemCount : 3
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: Material, ItemCount : 1
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: Model, ItemCount : 156
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: NodeAttribute, ItemCount : 154
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: AnimationCurveNode, ItemCount : 118
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.12.19-05.06.37:175][418]LogFbx: ItemName: Deformer, ItemCount : 51
+[2016.12.19-05.06.37:180][418]LogFbx: Loading FBX Scene from ../../../../../../../Downloads/fuck.fbx
+[2016.12.19-05.06.37:313][418]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.06.40:170][418]LogFbx: Loading FBX Scene from ../../../../../../../Downloads/fuck.fbx
+[2016.12.19-05.06.40:248][418]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.06.40:255][418]LogFbx: =================================================
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node START [HeadExpand] 
+[2016.12.19-05.06.40:255][418]LogFbx: 	Total Deformer Count -2105225728.
+[2016.12.19-05.06.40:255][418]LogFbx: 	Attribute () Type (4).
+[2016.12.19-05.06.40:255][418]LogFbx: 		[Node Attribute Child 1] HeadExpand (Type Mesh).
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node END [HeadExpand]
+[2016.12.19-05.06.40:255][418]LogFbx: =================================================
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.06.40:255][418]LogFbx: 	Total Deformer Count -1668558032.
+[2016.12.19-05.06.40:255][418]LogFbx: 		[Node 1]  (Type Skin).
+[2016.12.19-05.06.40:255][418]LogFbx: =================================================
+[2016.12.19-05.06.40:255][418]LogFbx: 		[Node 2] Cube (Type BlendShape).
+[2016.12.19-05.06.40:255][418]LogFbx: =================================================
+[2016.12.19-05.06.40:255][418]LogFbx: 	Attribute () Type (4).
+[2016.12.19-05.06.40:255][418]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.06.40:255][418]LogFbx: =================================================
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node START [HeadExpand] 
+[2016.12.19-05.06.40:255][418]LogFbx: 	Total Deformer Count -2105225600.
+[2016.12.19-05.06.40:255][418]LogFbx: 	Attribute () Type (4).
+[2016.12.19-05.06.40:255][418]LogFbx: 		[Node Attribute Child 1] HeadExpand (Type Mesh).
+[2016.12.19-05.06.40:255][418]LogFbx: Dumping Node END [HeadExpand]
+[2016.12.19-05.06.40:258][418]LogFbx: =================================================
+[2016.12.19-05.06.40:258][418]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.06.40:258][418]LogFbx: 	Total Deformer Count -1668557888.
+[2016.12.19-05.06.40:258][418]LogFbx: 		[Node 1]  (Type Skin).
+[2016.12.19-05.06.40:258][418]LogFbx: =================================================
+[2016.12.19-05.06.40:258][418]LogFbx: 		[Node 2] Cube (Type BlendShape).
+[2016.12.19-05.06.40:258][418]LogFbx: =================================================
+[2016.12.19-05.06.40:258][418]LogFbx: 	Attribute () Type (4).
+[2016.12.19-05.06.40:258][418]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.06.40:258][418]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.06.40:304][418]LogFbx:Warning: Not valid bind pose for Pose (skinCluster1) - Node Cube : The relative matrices do not match
+[2016.12.19-05.06.40:305][418]LogFbx:Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2016.12.19-05.06.40:308][418]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - Cube
+[2016.12.19-05.06.40:308][418]LogFbx:Warning: Recreating bind pose succeeded.
+[2016.12.19-05.06.40:343][418]LogLinker:Warning: Can't find file '/Game/lambert1'
+[2016.12.19-05.06.40:344][418]LogLinker:Warning: Can't find file '/Game/lambert1'
+[2016.12.19-05.06.40:432][418]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.12.19-05.06.40:652][418]LogFbx: Triangulating skeletal mesh Cube
+[2016.12.19-05.06.41:705][418]LogFbx:Warning: Bones digested - 63  Depth of hierarchy - 13
+[2016.12.19-05.06.42:109][418]LogSkeletalMesh: Chunk 0: 902 rigid vertices, 5136 soft vertices, 48 active bones
+[2016.12.19-05.06.42:145][418]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 12453 triangles
+[2016.12.19-05.06.42:175][418]LogLinker:Warning: Can't find file '/Game/fuck_PhysicsAsset'
+[2016.12.19-05.06.42:175][418]LogLinker:Warning: Can't find file '/Game/fuck_PhysicsAsset'
+[2016.12.19-05.06.42:175][418]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/fuck_PhysicsAsset.fuck_PhysicsAsset'
+[2016.12.19-05.06.42:236][418]LogLinker:Warning: Can't find file '/Game/fuck_Skeleton'
+[2016.12.19-05.06.42:237][418]LogLinker:Warning: Can't find file '/Game/fuck_Skeleton'
+[2016.12.19-05.06.42:237][418]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/fuck_Skeleton.fuck_Skeleton'
+[2016.12.19-05.06.42:291][418]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.19-05.06.42:291][418]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+Character1_LeftHandThumb4  
+Character1_LeftHandIndex2  
+Character1_LeftHandIndex3  
+Character1_LeftHandIndex4  
+Character1_LeftHandMiddle4  
+Character1_LeftHandRing2  
+Character1_LeftHandRing3  
+Character1_LeftHandRing4  
+Character1_LeftHandPinky2  
+Character1_LeftHandPinky3  
+Character1_LeftHandPinky4  
+Character1_RightHandPinky4  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2016.12.19-05.06.42:291][418]FBXImport:Warning: Warning Mesh 'Cube' has no UV set. Creating a default set. 
+[2016.12.19-05.06.42:605][419]LogMaterial:Warning: Material /Game/lambert1.lambert1 needed to have new flag set bUsedWithSkeletalMesh !
+[2016.12.19-05.06.42:627][419]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.12.19-05.06.42:679][419]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.12.19-05.07.42:320][918]Cmd: DELETE
+[2016.12.19-05.07.42:320][918]Cmd: ACTOR DELETE
+[2016.12.19-05.07.42:367][918]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2016.12.19-05.07.42:430][918]LogEditorActor: Deleted 1 Actors (0.089 secs)
+[2016.12.19-05.07.45:531][287]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-05.07.45:957][333]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-05.07.48:257][541]LogTexture:Display: Building textures: T_UDK_Sky_CloudMask01_N (AutoDXT)
+[2016.12.19-05.07.50:591][541]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2016.12.19-05.07.51:332][541]LogRenderer: Reallocating scene render targets to support 1056x888 (Frame:8912).
+[2016.12.19-05.08.16:562][302]LogRenderer: Reallocating scene render targets to support 1056x924 (Frame:13051).
+[2016.12.19-05.08.42:848][524]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (StaticMeshActor1)
+[2016.12.19-05.08.45:934][876]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-05.08.46:563][946]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-05.08.53:284][668]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/mode1.mode1_C'
+[2016.12.19-05.08.53:284][668]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/mode1.mode1_C'
+[2016.12.19-05.08.53:284][668]LogText:Warning: Failed to parse argument "GameModeName" as a number (using "0" as a fallback). Please check your format string for errors: "GameMode: Edit {GameModeName}".
+[2016.12.19-05.09.03:557][821]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-05.09.45:574][417]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0026 seconds. Added 111 classes and 0 folders.
+[2016.12.19-05.09.47:318][417]LogRenderer: Reallocating scene render targets to support 1144x924 (Frame:25083).
+[2016.12.19-05.10.01:641][711]LogEditorViewport: Clicking on Actor (context menu): fuck_Blueprint_C (fuck_Blueprint)
+[2016.12.19-05.10.11:487][712]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.19-05.10.12:003][767]LogEditorViewport: Clicking on Actor (LMB): fuck_Blueprint_C (fuck_Blueprint)
+[2016.12.19-05.10.12:347][802]LogEditorViewport: Clicking on Actor (context menu): fuck_Blueprint_C (fuck_Blueprint)
+[2016.12.19-05.10.17:806][415]LogEditorActor: Deleted Actor: fuck_Blueprint_C
+[2016.12.19-05.10.17:855][415]LogEditorActor: Deleted 1 Actors (0.063 secs)
+[2016.12.19-05.10.23:687][ 97]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-05.10.29:180][716]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_2) - call TermArticulated first.
+[2016.12.19-05.11.06:095][940]LogLinker:Warning: Can't find file '/Game/animoot'
+[2016.12.19-05.11.06:095][940]LogLinker:Warning: Can't find file '/Game/animoot'
+[2016.12.19-05.11.06:095][940]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/animoot.animoot'
+[2016.12.19-05.11.16:990][691]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/animoot.animoot
+[2016.12.19-05.11.23:820][110]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-05.16.10:400][678]LogLinker:Warning: Can't find file '/Game/rtjay'
+[2016.12.19-05.16.10:400][678]LogLinker:Warning: Can't find file '/Game/rtjay'
+[2016.12.19-05.16.10:400][678]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/rtjay.rtjay'
+[2016.12.19-05.16.20:071][205]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/rtjay.rtjay
+[2016.12.19-05.20.26:477][139]LogSavePackage: Save=4487.00ms
+[2016.12.19-05.20.26:477][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Minimal_Default_Auto1BB5B78D743464278BDC496A0C08A4D00.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2016.12.19-05.20.26:481][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2016.12.19-05.20.26:514][139]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.915
+[2016.12.19-05.20.26:514][139]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.915
+[2016.12.19-05.20.26:520][139]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/fuck] ([1] browsable assets)...
+[2016.12.19-05.20.26:569][139]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/fuck.fuck]
+[2016.12.19-05.20.26:569][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck]
+[2016.12.19-05.20.26:569][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:637][139]LogSavePackage: Save=66.59ms
+[2016.12.19-05.20.26:637][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Auto1845DE63C42BEF6A1D1224ABB822D2342.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Auto1.uasset'
+[2016.12.19-05.20.26:639][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Auto1.uasset
+[2016.12.19-05.20.26:641][139]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/lambert1] ([1] browsable assets)...
+[2016.12.19-05.20.26:672][139]OBJ SavePackage:     Rendered thumbnail for [Material /Game/lambert1.lambert1]
+[2016.12.19-05.20.26:673][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/lambert1]
+[2016.12.19-05.20.26:673][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/lambert1" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/lambert1_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:703][139]LogSavePackage: Save=28.45ms
+[2016.12.19-05.20.26:703][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/lambert1_Auto1CB5F30644BD7928A90E15EBBB1BB8FE0.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/lambert1_Auto1.uasset'
+[2016.12.19-05.20.26:705][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/lambert1_Auto1.uasset
+[2016.12.19-05.20.26:706][139]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/fuck_PhysicsAsset] ([1] browsable assets)...
+[2016.12.19-05.20.26:706][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_PhysicsAsset]
+[2016.12.19-05.20.26:706][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_PhysicsAsset" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_PhysicsAsset_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:720][139]LogSavePackage: Save=11.60ms
+[2016.12.19-05.20.26:720][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_PhysicsAsset_Auto1BFD7E67D4B6C1C86343465A06DF9EAA0.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_PhysicsAsset_Auto1.uasset'
+[2016.12.19-05.20.26:723][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_PhysicsAsset_Auto1.uasset
+[2016.12.19-05.20.26:725][139]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/fuck_Skeleton] ([1] browsable assets)...
+[2016.12.19-05.20.26:725][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton]
+[2016.12.19-05.20.26:725][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:730][139]LogSavePackage: Save=2.84ms
+[2016.12.19-05.20.26:731][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Auto1671099A0497C3282FCC0EE8DE0482DED.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto1.uasset'
+[2016.12.19-05.20.26:734][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto1.uasset
+[2016.12.19-05.20.26:736][139]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/fuck_Blueprint] ([1] browsable assets)...
+[2016.12.19-05.20.26:765][139]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/fuck_Blueprint.fuck_Blueprint]
+[2016.12.19-05.20.26:765][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Blueprint]
+[2016.12.19-05.20.26:765][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_Blueprint" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Blueprint_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:786][139]LogSavePackage: Save=19.06ms
+[2016.12.19-05.20.26:786][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Blueprint_Auto1EB07890F45850D3366317B95F0139434.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Blueprint_Auto1.uasset'
+[2016.12.19-05.20.26:788][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Blueprint_Auto1.uasset
+[2016.12.19-05.20.26:790][139]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/animoot] ([1] browsable assets)...
+[2016.12.19-05.20.26:823][139]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/animoot.animoot]
+[2016.12.19-05.20.26:823][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/animoot]
+[2016.12.19-05.20.26:823][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/animoot" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/animoot_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:836][139]LogSavePackage: Save=10.59ms
+[2016.12.19-05.20.26:836][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/animoot_Auto1FD05E4304A9D80E78E5F2FB639A340D9.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/animoot_Auto1.uasset'
+[2016.12.19-05.20.26:838][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/animoot_Auto1.uasset
+[2016.12.19-05.20.26:839][139]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/rtjay] ([1] browsable assets)...
+[2016.12.19-05.20.26:872][139]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/rtjay.rtjay]
+[2016.12.19-05.20.26:872][139]OBJ SavePackage: Finished generating thumbnails for package [/Game/rtjay]
+[2016.12.19-05.20.26:872][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/rtjay" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/rtjay_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.20.26:885][139]LogSavePackage: Save=11.36ms
+[2016.12.19-05.20.26:885][139]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/rtjay_Auto11931686043BE518317F47E820C64213F.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/rtjay_Auto1.uasset'
+[2016.12.19-05.20.26:888][139]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/rtjay_Auto1.uasset
+[2016.12.19-05.20.26:888][139]LogFileHelpers: Auto-saving content packages took 0.371
+[2016.12.19-05.23.56:251][149]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-05.23.57:502][267]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_6) - call TermArticulated first.
+[2016.12.19-05.24.16:452][566]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-05.24.28:646][244]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/fuck_Skeleton_Sequence.fuck_Skeleton_Sequence
+[2016.12.19-05.24.40:235][ 24]LogEditorTransaction: Undo Rotate Bone
+[2016.12.19-05.24.41:258][ 82]LogEditorTransaction: Undo Rotate Bone
+[2016.12.19-05.28.49:827][614]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:008][621]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:186][630]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:369][640]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:530][650]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:688][660]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.50:857][671]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.51:027][682]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.51:184][692]LogEditorTransaction: Undo Mouse Drag
+[2016.12.19-05.28.51:356][703]LogEditorTransaction: Undo Set Key
+[2016.12.19-05.28.51:545][715]LogEditorTransaction: Undo Rotate Bone
+[2016.12.19-05.28.51:713][726]LogEditorTransaction: Undo Set Key
+[2016.12.19-05.28.51:892][736]LogEditorTransaction: Undo Set Key
+[2016.12.19-05.28.52:113][751]LogEditorTransaction: Undo Rotate Bone
+[2016.12.19-05.28.52:319][765]LogEditorTransaction: Undo Set Key
+[2016.12.19-05.28.52:525][779]LogEditorTransaction: Undo Move Actors
+[2016.12.19-05.30.31:543][338]LogSavePackage: Save=4059.50ms
+[2016.12.19-05.30.31:543][338]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Minimal_Default_Auto2FA41DF8A4FFF99DFD1DB27BDC0DBC9D4.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap'
+[2016.12.19-05.30.31:601][338]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap
+[2016.12.19-05.30.31:604][338]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.187
+[2016.12.19-05.30.31:604][338]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.187
+[2016.12.19-05.30.31:607][338]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/fuck_Skeleton] ([1] browsable assets)...
+[2016.12.19-05.30.31:607][338]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton]
+[2016.12.19-05.30.31:607][338]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.30.31:611][338]LogSavePackage: Save=2.50ms
+[2016.12.19-05.30.31:611][338]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Auto265243D97451B49E2182422A1123BDB79.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto2.uasset'
+[2016.12.19-05.30.31:613][338]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto2.uasset
+[2016.12.19-05.30.31:615][338]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/fuck_Skeleton_Sequence] ([1] browsable assets)...
+[2016.12.19-05.30.31:643][338]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/fuck_Skeleton_Sequence.fuck_Skeleton_Sequence]
+[2016.12.19-05.30.31:643][338]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton_Sequence]
+[2016.12.19-05.30.31:656][338]LogSavePackage: Save=10.52ms
+[2016.12.19-05.30.31:656][338]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Sequence_Auto2400D351A4E310B70E1381C9226E95FE0.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence_Auto2.uasset'
+[2016.12.19-05.30.31:658][338]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence_Auto2.uasset
+[2016.12.19-05.30.31:658][338]LogFileHelpers: Auto-saving content packages took 0.052
+[2016.12.19-05.32.07:386][728]LogSlate:Warning: Slate: Had to block on waiting for a draw buffer
+[2016.12.19-05.32.07:389][728]LogSlate:Warning: Slate: Had to block on waiting for a draw buffer
+[2016.12.19-05.32.07:620][728]LogSlate:Warning: Slate: Had to block on waiting for a draw buffer
+[2016.12.19-05.32.07:724][728]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_9) - call TermArticulated first.
+[2016.12.19-05.32.07:773][728]LogSlate:Warning: Slate: Had to block on waiting for a draw buffer
+[2016.12.19-05.32.34:744][396]LogWindows: LaunchURL udn.unrealengine.com/docs/ue4/INT/Engine/Animation/Sequences/Notifies/index.html
+[2016.12.19-05.32.46:774][630]LogWindows: LaunchURL https://udn.unrealengine.com/docs/ue4/INT/Engine/Animation/Sequences/index.html
+[2016.12.19-05.35.44:671][271]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_11) - call TermArticulated first.
+[2016.12.19-05.38.49:656][945]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/fuck_Skeleton_Sequence.fuck_Skeleton_Sequence
+[2016.12.19-05.40.33:776][170]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.022
+[2016.12.19-05.40.33:778][170]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/fuck_Skeleton] ([1] browsable assets)...
+[2016.12.19-05.40.33:779][170]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton]
+[2016.12.19-05.40.33:779][170]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.40.33:784][170]LogSavePackage: Save=3.10ms
+[2016.12.19-05.40.33:784][170]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Auto31BA99A0743F385CCF6DBF9BA488D3DC0.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto3.uasset'
+[2016.12.19-05.40.33:786][170]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto3.uasset
+[2016.12.19-05.40.33:786][170]LogFileHelpers: Auto-saving content packages took 0.010
+[2016.12.19-05.41.09:264][955]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/mode1.mode1_C'
+[2016.12.19-05.41.09:264][955]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/mode1.mode1_C'
+[2016.12.19-05.41.09:264][955]LogText:Warning: Failed to parse argument "GameModeName" as a number (using "0" as a fallback). Please check your format string for errors: "GameMode: Edit {GameModeName}".
+[2016.12.19-05.41.40:711][ 92]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.12.19-05.42.12:490][359]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_13) - call TermArticulated first.
+[2016.12.19-05.42.12:818][359]LogContentBrowser:Verbose: The majority of assets in the view are of type: AimOffsetBlendSpace
+[2016.12.19-05.42.42:026][167]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/fuck_Skeleton_Sequence.fuck_Skeleton_Sequence
+[2016.12.19-05.46.09:074][743]LogEditorTransaction: Undo Translate Bone
+[2016.12.19-05.46.36:134][  3]LogEditorTransaction: Undo Translate Bone
+[2016.12.19-05.47.16:779][851]LogEditorTransaction: Undo Translate Bone
+[2016.12.19-05.47.21:092][116]LogEditorTransaction: Undo Translate Bone
+[2016.12.19-05.48.33:867][271]LogEditorTransaction: Undo Rotate Bone
+[2016.12.19-05.48.42:205][780]LogEditorTransaction: Undo Translate Bone
+[2016.12.19-05.50.34:766][375]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.018
+[2016.12.19-05.50.34:768][375]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/fuck_Skeleton] ([1] browsable assets)...
+[2016.12.19-05.50.34:768][375]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton]
+[2016.12.19-05.50.34:769][375]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/fuck_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-05.50.34:773][375]LogSavePackage: Save=2.58ms
+[2016.12.19-05.50.34:773][375]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Auto43BEFE8F643D13DBDFE05CBAE227E0EAF.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto4.uasset'
+[2016.12.19-05.50.34:775][375]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Auto4.uasset
+[2016.12.19-05.50.34:776][375]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/fuck_Skeleton_Sequence] ([1] browsable assets)...
+[2016.12.19-05.50.34:791][375]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/fuck_Skeleton_Sequence.fuck_Skeleton_Sequence]
+[2016.12.19-05.50.34:791][375]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton_Sequence]
+[2016.12.19-05.50.34:805][375]LogSavePackage: Save=12.49ms
+[2016.12.19-05.50.34:805][375]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Sequence_Auto41DC215D1433FB2D625F551B1E0ADFA02.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence_Auto4.uasset'
+[2016.12.19-05.50.34:807][375]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence_Auto4.uasset
+[2016.12.19-05.50.34:809][375]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/NewAimOffsetBlendSpace] ([1] browsable assets)...
+[2016.12.19-05.50.34:823][375]OBJ SavePackage:     Rendered thumbnail for [AimOffsetBlendSpace /Game/NewAimOffsetBlendSpace.NewAimOffsetBlendSpace]
+[2016.12.19-05.50.34:823][375]OBJ SavePackage: Finished generating thumbnails for package [/Game/NewAimOffsetBlendSpace]
+[2016.12.19-05.50.34:833][375]LogSavePackage: Save=8.62ms
+[2016.12.19-05.50.34:833][375]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/NewAimOffsetBlendSpace_Auto46094E82B44B69596A4EDF88BD8413F86.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/NewAimOffsetBlendSpace_Auto4.uasset'
+[2016.12.19-05.50.34:836][375]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/NewAimOffsetBlendSpace_Auto4.uasset
+[2016.12.19-05.50.34:836][375]LogFileHelpers: Auto-saving content packages took 0.069
+[2016.12.19-05.54.27:739][305]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../../Documents/boxo.fbx)
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: NodeAttribute, ItemCount : 2
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: Model, ItemCount : 3
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: AnimationCurveNode, ItemCount : 3
+[2016.12.19-05.54.27:750][305]LogFbx: ItemName: AnimationCurve, ItemCount : 7
+[2016.12.19-05.54.27:754][305]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.54.27:802][305]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.54.35:046][305]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.54.35:054][305]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.54.35:056][305]LogFbx: =================================================
+[2016.12.19-05.54.35:056][305]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.54.35:056][305]LogFbx: 	Total Deformer Count 381532000.
+[2016.12.19-05.54.35:056][305]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.54.35:056][305]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.54.35:056][305]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.54.35:056][305]LogFbx: =================================================
+[2016.12.19-05.54.35:056][305]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.54.35:056][305]LogFbx: 	Total Deformer Count 381533872.
+[2016.12.19-05.54.35:056][305]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.54.35:056][305]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.54.35:056][305]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.54.35:081][305]LogFbx: Triangulating skeletal mesh Cube
+[2016.12.19-05.54.35:087][305]LogFbx:Warning: Bones digested - 1  Depth of hierarchy - 1
+[2016.12.19-05.54.35:087][305]LogSkeletalMesh: Chunk 0: 8 rigid vertices, 0 soft vertices, 1 active bones
+[2016.12.19-05.54.35:087][305]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 12 triangles
+[2016.12.19-05.54.35:088][305]LogLinker:Warning: Can't find file '/Game/boxo_PhysicsAsset'
+[2016.12.19-05.54.35:088][305]LogLinker:Warning: Can't find file '/Game/boxo_PhysicsAsset'
+[2016.12.19-05.54.35:088][305]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_PhysicsAsset.boxo_PhysicsAsset'
+[2016.12.19-05.54.35:091][305]LogLinker:Warning: Can't find file '/Game/boxo_Skeleton'
+[2016.12.19-05.54.35:091][305]LogLinker:Warning: Can't find file '/Game/boxo_Skeleton'
+[2016.12.19-05.54.35:091][305]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_Skeleton.boxo_Skeleton'
+[2016.12.19-05.54.35:095][305]LogFbx: =================================================
+[2016.12.19-05.54.35:095][305]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.54.35:095][305]LogFbx: 	Total Deformer Count 381524320.
+[2016.12.19-05.54.35:095][305]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.54.35:095][305]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.54.35:095][305]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.54.35:095][305]LogFbx: =================================================
+[2016.12.19-05.54.35:095][305]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.54.35:095][305]LogFbx: 	Total Deformer Count 381524320.
+[2016.12.19-05.54.35:095][305]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.54.35:095][305]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.54.35:095][305]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.54.35:096][305]LogFbx: SortedLinks :(0) Cube
+[2016.12.19-05.54.35:111][305]LogFbx: Parsing AnimStack Cube|CubeAction
+[2016.12.19-05.54.35:122][305]LogLinker:Warning: Can't find file '/Game/boxo_Anim'
+[2016.12.19-05.54.35:122][305]LogLinker:Warning: Can't find file '/Game/boxo_Anim'
+[2016.12.19-05.54.35:122][305]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_Anim.boxo_Anim'
+[2016.12.19-05.54.35:145][305]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim.boxo_Anim
+[2016.12.19-05.54.35:149][305]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.19-05.54.35:149][305]FBXImport:Warning: Warning Could not find the bind pose.  It will use time 0 as bind pose. 
+[2016.12.19-05.54.35:149][305]FBXImport:Warning: Warning Mesh 'Cube' has no UV set. Creating a default set. 
+[2016.12.19-05.54.41:991][953]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (boxo)
+[2016.12.19-05.54.43:336][ 71]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_16) - call TermArticulated first.
+[2016.12.19-05.54.47:743][308]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-05.55.05:300][574]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../../Documents/boxo.fbx)
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: NodeAttribute, ItemCount : 2
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: Model, ItemCount : 3
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: AnimationCurveNode, ItemCount : 3
+[2016.12.19-05.55.05:308][574]LogFbx: ItemName: AnimationCurve, ItemCount : 7
+[2016.12.19-05.55.05:312][574]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.55.05:320][574]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.55.09:039][574]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.55.09:046][574]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.55.09:049][574]LogFbx: =================================================
+[2016.12.19-05.55.09:049][574]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.55.09:049][574]LogFbx: 	Total Deformer Count 437811712.
+[2016.12.19-05.55.09:049][574]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.55.09:049][574]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.55.09:049][574]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.55.09:049][574]LogFbx: =================================================
+[2016.12.19-05.55.09:049][574]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.55.09:049][574]LogFbx: 	Total Deformer Count 437810320.
+[2016.12.19-05.55.09:049][574]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.55.09:049][574]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.55.09:049][574]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.55.09:104][574]LogFbx: Triangulating skeletal mesh Cube
+[2016.12.19-05.55.09:105][574]LogFbx:Warning: Bones digested - 1  Depth of hierarchy - 1
+[2016.12.19-05.55.09:106][574]LogSkeletalMesh: Chunk 0: 8 rigid vertices, 0 soft vertices, 1 active bones
+[2016.12.19-05.55.09:106][574]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 12 triangles
+[2016.12.19-05.55.09:107][574]LogFbx: =================================================
+[2016.12.19-05.55.09:107][574]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.55.09:107][574]LogFbx: 	Total Deformer Count 437800912.
+[2016.12.19-05.55.09:107][574]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.55.09:107][574]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.55.09:107][574]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.55.09:107][574]LogFbx: =================================================
+[2016.12.19-05.55.09:107][574]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.55.09:107][574]LogFbx: 	Total Deformer Count 437800912.
+[2016.12.19-05.55.09:107][574]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.55.09:107][574]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.55.09:107][574]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.55.09:107][574]LogFbx: SortedLinks :(0) Cube
+[2016.12.19-05.55.09:107][574]LogFbx: Parsing AnimStack Cube|CubeAction
+[2016.12.19-05.55.09:110][574]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim.boxo_Anim
+[2016.12.19-05.55.09:111][574]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.19-05.55.09:111][574]FBXImport:Warning: Warning Could not find the bind pose.  It will use time 0 as bind pose. 
+[2016.12.19-05.55.09:111][574]FBXImport:Warning: Warning Mesh 'Cube' has no UV set. Creating a default set. 
+[2016.12.19-05.56.10:420][739]Cmd: DELETE
+[2016.12.19-05.56.10:420][739]Cmd: ACTOR DELETE
+[2016.12.19-05.56.10:432][739]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2016.12.19-05.56.10:453][739]LogEditorActor: Deleted 1 Actors (0.034 secs)
+[2016.12.19-05.56.15:820][997]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../../Documents/boxo.fbx)
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: NodeAttribute, ItemCount : 2
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: Model, ItemCount : 3
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: AnimationStack, ItemCount : 3
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: AnimationLayer, ItemCount : 3
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: AnimationCurveNode, ItemCount : 9
+[2016.12.19-05.56.15:827][997]LogFbx: ItemName: AnimationCurve, ItemCount : 21
+[2016.12.19-05.56.15:832][997]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.56.15:840][997]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.56.25:886][997]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo.fbx
+[2016.12.19-05.56.25:894][997]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-05.56.25:895][997]LogFbx: =================================================
+[2016.12.19-05.56.25:895][997]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.56.25:895][997]LogFbx: 	Total Deformer Count -1476863408.
+[2016.12.19-05.56.25:895][997]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.56.25:895][997]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.56.25:895][997]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.56.25:895][997]LogFbx: =================================================
+[2016.12.19-05.56.25:895][997]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.56.25:895][997]LogFbx: 	Total Deformer Count -1476854960.
+[2016.12.19-05.56.25:895][997]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.56.25:895][997]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.56.25:895][997]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.56.25:896][997]LogFbx: Triangulating skeletal mesh Cube
+[2016.12.19-05.56.25:898][997]LogFbx:Warning: Bones digested - 1  Depth of hierarchy - 1
+[2016.12.19-05.56.25:898][997]LogSkeletalMesh: Chunk 0: 8 rigid vertices, 0 soft vertices, 1 active bones
+[2016.12.19-05.56.25:898][997]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 12 triangles
+[2016.12.19-05.56.25:899][997]LogFbx: =================================================
+[2016.12.19-05.56.25:899][997]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.56.25:899][997]LogFbx: 	Total Deformer Count -1476868400.
+[2016.12.19-05.56.25:899][997]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.56.25:899][997]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.56.25:899][997]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.56.25:899][997]LogFbx: =================================================
+[2016.12.19-05.56.25:899][997]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-05.56.25:899][997]LogFbx: 	Total Deformer Count -1476868400.
+[2016.12.19-05.56.25:899][997]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-05.56.25:899][997]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-05.56.25:899][997]LogFbx: Dumping Node END [Cube]
+[2016.12.19-05.56.25:899][997]LogFbx: SortedLinks :(0) Cube
+[2016.12.19-05.56.25:899][997]LogFbx: SortedLinks :(0) Cube
+[2016.12.19-05.56.25:899][997]LogFbx: SortedLinks :(0) Cube
+[2016.12.19-05.56.25:899][997]LogFbx: Parsing AnimStack Cube|Action
+[2016.12.19-05.56.25:925][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_Action'
+[2016.12.19-05.56.25:925][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_Action'
+[2016.12.19-05.56.25:925][997]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_Anim_Cube_Action.boxo_Anim_Cube_Action'
+[2016.12.19-05.56.25:928][997]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_Action.boxo_Anim_Cube_Action
+[2016.12.19-05.56.25:930][997]LogFbx: Parsing AnimStack Cube|Action.001
+[2016.12.19-05.56.25:930][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_Action_001'
+[2016.12.19-05.56.25:930][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_Action_001'
+[2016.12.19-05.56.25:930][997]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_Anim_Cube_Action_001.boxo_Anim_Cube_Action_001'
+[2016.12.19-05.56.25:933][997]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_Action_001.boxo_Anim_Cube_Action_001
+[2016.12.19-05.56.25:935][997]LogFbx: Parsing AnimStack Cube|CubeAction
+[2016.12.19-05.56.25:935][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_CubeAction'
+[2016.12.19-05.56.25:935][997]LogLinker:Warning: Can't find file '/Game/boxo_Anim_Cube_CubeAction'
+[2016.12.19-05.56.25:935][997]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo_Anim_Cube_CubeAction.boxo_Anim_Cube_CubeAction'
+[2016.12.19-05.56.25:938][997]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_CubeAction.boxo_Anim_Cube_CubeAction
+[2016.12.19-05.56.25:941][997]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.19-05.56.25:941][997]FBXImport:Warning: Warning Could not find the bind pose.  It will use time 0 as bind pose. 
+[2016.12.19-05.56.25:941][997]FBXImport:Warning: Warning Mesh 'Cube' has no UV set. Creating a default set. 
+[2016.12.19-05.57.23:713][ 82]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (boxo)
+[2016.12.19-05.57.24:649][155]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_18) - call TermArticulated first.
+[2016.12.19-05.57.28:243][352]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-05.57.42:984][292]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo_Anim" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Content/boxo_Anim.uasset" SILENT=true
+[2016.12.19-05.57.42:995][292]LogSavePackage: Save=9.48ms
+[2016.12.19-05.57.42:995][292]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_AnimC02A54B6481F46D74E838A8731A88B26.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Content/boxo_Anim.uasset'
+[2016.12.19-05.57.43:000][292]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Content/boxo_Anim.uasset
+[2016.12.19-05.58.00:891][972]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (boxo)
+[2016.12.19-05.58.01:952][ 58]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_21) - call TermArticulated first.
+[2016.12.19-05.58.04:855][204]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-05.59.26:367][536]Cmd: DELETE
+[2016.12.19-05.59.26:367][536]Cmd: ACTOR DELETE
+[2016.12.19-05.59.26:382][536]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2016.12.19-05.59.26:419][536]LogEditorActor: Deleted 1 Actors (0.052 secs)
+[2016.12.19-06.00.40:354][870]LogSavePackage: Save=4391.63ms
+[2016.12.19-06.00.40:354][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Minimal_Default_Auto52C5F5FDD468773C0EE5AE68906AF8E10.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto5.umap'
+[2016.12.19-06.00.40:412][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto5.umap
+[2016.12.19-06.00.40:415][870]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.569
+[2016.12.19-06.00.40:415][870]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.569
+[2016.12.19-06.00.40:417][870]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo] ([1] browsable assets)...
+[2016.12.19-06.00.40:434][870]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/boxo.boxo]
+[2016.12.19-06.00.40:434][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo]
+[2016.12.19-06.00.40:434][870]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.00.40:446][870]LogSavePackage: Save=10.36ms
+[2016.12.19-06.00.40:446][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_Auto547F2854C4A4BB87295227EAA71C01D0C.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Auto5.uasset'
+[2016.12.19-06.00.40:449][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Auto5.uasset
+[2016.12.19-06.00.40:450][870]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/boxo_PhysicsAsset] ([1] browsable assets)...
+[2016.12.19-06.00.40:450][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo_PhysicsAsset]
+[2016.12.19-06.00.40:451][870]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo_PhysicsAsset" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_PhysicsAsset_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.00.40:456][870]LogSavePackage: Save=2.70ms
+[2016.12.19-06.00.40:456][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_PhysicsAsset_Auto558F977AB4E07274E6099E4BD8B70B42B.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_PhysicsAsset_Auto5.uasset'
+[2016.12.19-06.00.40:463][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_PhysicsAsset_Auto5.uasset
+[2016.12.19-06.00.40:464][870]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/boxo_Skeleton] ([1] browsable assets)...
+[2016.12.19-06.00.40:464][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo_Skeleton]
+[2016.12.19-06.00.40:464][870]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Skeleton_Auto5.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.00.40:467][870]LogSavePackage: Save=1.73ms
+[2016.12.19-06.00.40:468][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_Skeleton_Auto5A139D59A442868D31D49A0AF49283AED.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Skeleton_Auto5.uasset'
+[2016.12.19-06.00.40:470][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Skeleton_Auto5.uasset
+[2016.12.19-06.00.40:471][870]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo_Anim_Cube_Action] ([1] browsable assets)...
+[2016.12.19-06.00.40:489][870]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/boxo_Anim_Cube_Action.boxo_Anim_Cube_Action]
+[2016.12.19-06.00.40:489][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo_Anim_Cube_Action]
+[2016.12.19-06.00.40:500][870]LogSavePackage: Save=9.53ms
+[2016.12.19-06.00.40:500][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_Anim_Cube_Action_Auto50B28F4D445D92D2CAF0D63A7B7EC3D7A.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_Action_Auto5.uasset'
+[2016.12.19-06.00.40:503][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_Action_Auto5.uasset
+[2016.12.19-06.00.40:504][870]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo_Anim_Cube_Action_001] ([1] browsable assets)...
+[2016.12.19-06.00.40:525][870]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/boxo_Anim_Cube_Action_001.boxo_Anim_Cube_Action_001]
+[2016.12.19-06.00.40:525][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo_Anim_Cube_Action_001]
+[2016.12.19-06.00.40:538][870]LogSavePackage: Save=9.70ms
+[2016.12.19-06.00.40:538][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_Anim_Cube_Action_001_Auto5CE6EBF5745ED08EF6279F09B32B956C6.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_Action_001_Auto5.uasset'
+[2016.12.19-06.00.40:540][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_Action_001_Auto5.uasset
+[2016.12.19-06.00.40:541][870]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo_Anim_Cube_CubeAction] ([1] browsable assets)...
+[2016.12.19-06.00.40:564][870]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/boxo_Anim_Cube_CubeAction.boxo_Anim_Cube_CubeAction]
+[2016.12.19-06.00.40:564][870]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo_Anim_Cube_CubeAction]
+[2016.12.19-06.00.40:579][870]LogSavePackage: Save=12.80ms
+[2016.12.19-06.00.40:579][870]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo_Anim_Cube_CubeAction_Auto578C454D04E66A18560BBF880701D4ACA.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_CubeAction_Auto5.uasset'
+[2016.12.19-06.00.40:582][870]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo_Anim_Cube_CubeAction_Auto5.uasset
+[2016.12.19-06.00.40:582][870]LogFileHelpers: Auto-saving content packages took 0.167
+[2016.12.19-06.07.52:441][270]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../../Documents/boxo2.fbx)
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: NodeAttribute, ItemCount : 4
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: Model, ItemCount : 5
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: Pose, ItemCount : 1
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: Deformer, ItemCount : 2
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: AnimationStack, ItemCount : 2
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: AnimationLayer, ItemCount : 2
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: AnimationCurveNode, ItemCount : 12
+[2016.12.19-06.07.52:450][270]LogFbx: ItemName: AnimationCurve, ItemCount : 34
+[2016.12.19-06.07.52:455][270]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo2.fbx
+[2016.12.19-06.07.52:464][270]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-06.07.58:360][270]LogFbx: Loading FBX Scene from ../../../../../../../Documents/boxo2.fbx
+[2016.12.19-06.07.58:368][270]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.19-06.07.58:370][270]LogFbx: =================================================
+[2016.12.19-06.07.58:370][270]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-06.07.58:370][270]LogFbx: 	Total Deformer Count -1471744784.
+[2016.12.19-06.07.58:370][270]LogFbx: 		[Node 1] Armature (Type Skin).
+[2016.12.19-06.07.58:370][270]LogFbx: =================================================
+[2016.12.19-06.07.58:370][270]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-06.07.58:370][270]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-06.07.58:370][270]LogFbx: Dumping Node END [Cube]
+[2016.12.19-06.07.58:370][270]LogFbx: =================================================
+[2016.12.19-06.07.58:370][270]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-06.07.58:370][270]LogFbx: 	Total Deformer Count -1471744208.
+[2016.12.19-06.07.58:370][270]LogFbx: 		[Node 1] Armature (Type Skin).
+[2016.12.19-06.07.58:370][270]LogFbx: =================================================
+[2016.12.19-06.07.58:370][270]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-06.07.58:370][270]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-06.07.58:370][270]LogFbx: Dumping Node END [Cube]
+[2016.12.19-06.07.58:372][270]LogFbx: Valid bind pose for Pose (Cube) - Cube
+[2016.12.19-06.07.58:372][270]LogFbx: Triangulating skeletal mesh Cube
+[2016.12.19-06.07.58:374][270]LogFbx:Warning: Bones digested - 3  Depth of hierarchy - 3
+[2016.12.19-06.07.58:374][270]LogSkeletalMesh: Chunk 0: 8 rigid vertices, 0 soft vertices, 1 active bones
+[2016.12.19-06.07.58:374][270]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 12 triangles
+[2016.12.19-06.07.58:376][270]LogLinker:Warning: Can't find file '/Game/boxo2_PhysicsAsset'
+[2016.12.19-06.07.58:376][270]LogLinker:Warning: Can't find file '/Game/boxo2_PhysicsAsset'
+[2016.12.19-06.07.58:376][270]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo2_PhysicsAsset.boxo2_PhysicsAsset'
+[2016.12.19-06.07.58:378][270]LogLinker:Warning: Can't find file '/Game/boxo2_Skeleton'
+[2016.12.19-06.07.58:378][270]LogLinker:Warning: Can't find file '/Game/boxo2_Skeleton'
+[2016.12.19-06.07.58:378][270]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo2_Skeleton.boxo2_Skeleton'
+[2016.12.19-06.07.58:380][270]LogFbx: =================================================
+[2016.12.19-06.07.58:380][270]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-06.07.58:380][270]LogFbx: 	Total Deformer Count -1471745696.
+[2016.12.19-06.07.58:380][270]LogFbx: 		[Node 1] Armature (Type Skin).
+[2016.12.19-06.07.58:380][270]LogFbx: =================================================
+[2016.12.19-06.07.58:380][270]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-06.07.58:380][270]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-06.07.58:380][270]LogFbx: Dumping Node END [Cube]
+[2016.12.19-06.07.58:380][270]LogFbx: =================================================
+[2016.12.19-06.07.58:380][270]LogFbx: Dumping Node START [Cube] 
+[2016.12.19-06.07.58:380][270]LogFbx: 	Total Deformer Count -1471745696.
+[2016.12.19-06.07.58:380][270]LogFbx: 		[Node 1] Armature (Type Skin).
+[2016.12.19-06.07.58:380][270]LogFbx: =================================================
+[2016.12.19-06.07.58:380][270]LogFbx: 	Attribute (Cube) Type (4).
+[2016.12.19-06.07.58:380][270]LogFbx: 		[Node Attribute Child 1] Cube (Type Mesh).
+[2016.12.19-06.07.58:380][270]LogFbx: Dumping Node END [Cube]
+[2016.12.19-06.07.58:380][270]LogFbx: SortedLinks :(0) Armature
+[2016.12.19-06.07.58:380][270]LogFbx: SortedLinks :(1) Bone
+[2016.12.19-06.07.58:380][270]LogFbx: SortedLinks :(2) Bone_end
+[2016.12.19-06.07.58:380][270]LogFbx: SortedLinks :(0) Armature
+[2016.12.19-06.07.58:380][270]LogFbx: SortedLinks :(1) Bone
+[2016.12.19-06.07.58:381][270]LogFbx: SortedLinks :(2) Bone_end
+[2016.12.19-06.07.58:381][270]LogFbx: Parsing AnimStack Armature|ArmatureAction
+[2016.12.19-06.07.58:381][270]LogLinker:Warning: Can't find file '/Game/boxo2_Anim_Armature_ArmatureAction'
+[2016.12.19-06.07.58:381][270]LogLinker:Warning: Can't find file '/Game/boxo2_Anim_Armature_ArmatureAction'
+[2016.12.19-06.07.58:381][270]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo2_Anim_Armature_ArmatureAction.boxo2_Anim_Armature_ArmatureAction'
+[2016.12.19-06.07.58:384][270]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo2_Anim_Armature_ArmatureAction.boxo2_Anim_Armature_ArmatureAction
+[2016.12.19-06.07.58:386][270]LogFbx: Parsing AnimStack Armature|CubeAction
+[2016.12.19-06.07.58:387][270]LogLinker:Warning: Can't find file '/Game/boxo2_Anim_Armature_CubeAction'
+[2016.12.19-06.07.58:387][270]LogLinker:Warning: Can't find file '/Game/boxo2_Anim_Armature_CubeAction'
+[2016.12.19-06.07.58:387][270]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/boxo2_Anim_Armature_CubeAction.boxo2_Anim_Armature_CubeAction'
+[2016.12.19-06.07.58:391][270]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo2_Anim_Armature_CubeAction.boxo2_Anim_Armature_CubeAction
+[2016.12.19-06.07.58:394][270]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.19-06.07.58:395][270]FBXImport:Warning: Warning The following bones are missing from the bind pose:
+Bone_end  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2016.12.19-06.07.58:395][270]FBXImport:Warning: Warning Mesh 'Cube' has no UV set. Creating a default set. 
+[2016.12.19-06.08.07:845][107]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (boxo2)
+[2016.12.19-06.08.08:827][161]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_24) - call TermArticulated first.
+[2016.12.19-06.08.11:178][253]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-06.08.31:444][497]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_28) - call TermArticulated first.
+[2016.12.19-06.08.31:930][497]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-06.10.45:323][145]LogSavePackage: Save=3966.94ms
+[2016.12.19-06.10.45:323][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Minimal_Default_Auto6332C3C584342F8614DED3BB0A4DFCEAD.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto6.umap'
+[2016.12.19-06.10.45:373][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto6.umap
+[2016.12.19-06.10.45:375][145]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.133
+[2016.12.19-06.10.45:375][145]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.133
+[2016.12.19-06.10.45:378][145]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo2] ([1] browsable assets)...
+[2016.12.19-06.10.45:410][145]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/boxo2.boxo2]
+[2016.12.19-06.10.45:410][145]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo2]
+[2016.12.19-06.10.45:410][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo2" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.10.45:422][145]LogSavePackage: Save=9.42ms
+[2016.12.19-06.10.45:422][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo2_Auto68F5B910140BBBF14FDC010B86BDF451F.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Auto6.uasset'
+[2016.12.19-06.10.45:424][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Auto6.uasset
+[2016.12.19-06.10.45:426][145]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/boxo2_PhysicsAsset] ([1] browsable assets)...
+[2016.12.19-06.10.45:426][145]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo2_PhysicsAsset]
+[2016.12.19-06.10.45:426][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo2_PhysicsAsset" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_PhysicsAsset_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.10.45:430][145]LogSavePackage: Save=2.50ms
+[2016.12.19-06.10.45:430][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo2_PhysicsAsset_Auto6043955614F2FAE844B3D4F820646EEED.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_PhysicsAsset_Auto6.uasset'
+[2016.12.19-06.10.45:432][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_PhysicsAsset_Auto6.uasset
+[2016.12.19-06.10.45:434][145]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/boxo2_Skeleton] ([1] browsable assets)...
+[2016.12.19-06.10.45:434][145]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo2_Skeleton]
+[2016.12.19-06.10.45:434][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/boxo2_Skeleton" FILE="../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Skeleton_Auto6.uasset" SILENT=false AUTOSAVING=true
+[2016.12.19-06.10.45:437][145]LogSavePackage: Save=1.66ms
+[2016.12.19-06.10.45:437][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo2_Skeleton_Auto6067F9B444D55EFE3042B6C94224A3107.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Skeleton_Auto6.uasset'
+[2016.12.19-06.10.45:446][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Skeleton_Auto6.uasset
+[2016.12.19-06.10.45:447][145]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo2_Anim_Armature_ArmatureAction] ([1] browsable assets)...
+[2016.12.19-06.10.45:480][145]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/boxo2_Anim_Armature_ArmatureAction.boxo2_Anim_Armature_ArmatureAction]
+[2016.12.19-06.10.45:480][145]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo2_Anim_Armature_ArmatureAction]
+[2016.12.19-06.10.45:501][145]LogSavePackage: Save=19.63ms
+[2016.12.19-06.10.45:502][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo2_Anim_Armature_ArmatureAction_Auto6BB4D584F4EE385752C8E7294884845DA.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Anim_Armature_ArmatureAction_Auto6.uasset'
+[2016.12.19-06.10.45:507][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Anim_Armature_ArmatureAction_Auto6.uasset
+[2016.12.19-06.10.45:510][145]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/boxo2_Anim_Armature_CubeAction] ([1] browsable assets)...
+[2016.12.19-06.10.45:548][145]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/boxo2_Anim_Armature_CubeAction.boxo2_Anim_Armature_CubeAction]
+[2016.12.19-06.10.45:548][145]OBJ SavePackage: Finished generating thumbnails for package [/Game/boxo2_Anim_Armature_CubeAction]
+[2016.12.19-06.10.45:562][145]LogSavePackage: Save=11.85ms
+[2016.12.19-06.10.45:562][145]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/boxo2_Anim_Armature_CubeAction_Auto690182DAA4ADA84513EBE95AC94C9008F.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Anim_Armature_CubeAction_Auto6.uasset'
+[2016.12.19-06.10.45:565][145]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/boxo2_Anim_Armature_CubeAction_Auto6.uasset
+[2016.12.19-06.10.45:565][145]LogFileHelpers: Auto-saving content packages took 0.189
+[2016.12.19-06.17.02:740][707]LogEditorViewport: Clicking Background
+[2016.12.19-06.17.03:716][822]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-06.17.04:636][907]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (boxo2)
+[2016.12.19-06.17.09:817][418]Cmd: DELETE
+[2016.12.19-06.17.09:817][418]Cmd: ACTOR DELETE
+[2016.12.19-06.17.09:830][418]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2016.12.19-06.17.09:855][418]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2016.12.19-06.17.10:970][551]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-06.17.12:115][635]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_33) - call TermArticulated first.
+[2016.12.19-06.18.21:806][955]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.19-06.18.31:804][491]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/fuck_Skeleton_Sequence2.fuck_Skeleton_Sequence2
+[2016.12.19-06.21.25:495][992]LogSavePackage: Save=3909.88ms
+[2016.12.19-06.21.25:495][992]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Minimal_Default_Auto732FB82AA48E0C52C0B9574A87C8DC061.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto7.umap'
+[2016.12.19-06.21.25:552][992]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto7.umap
+[2016.12.19-06.21.25:555][992]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.065
+[2016.12.19-06.21.25:555][992]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.065
+[2016.12.19-06.21.25:558][992]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/fuck_Skeleton_Sequence2] ([1] browsable assets)...
+[2016.12.19-06.21.25:573][992]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/fuck_Skeleton_Sequence2.fuck_Skeleton_Sequence2]
+[2016.12.19-06.21.25:573][992]OBJ SavePackage: Finished generating thumbnails for package [/Game/fuck_Skeleton_Sequence2]
+[2016.12.19-06.21.25:575][992]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/fuck_Skeleton_Sequence2.fuck_Skeleton_Sequence2
+[2016.12.19-06.21.25:586][992]LogSavePackage: Save=11.72ms
+[2016.12.19-06.21.25:586][992]LogSavePackage: Moving '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/fuck_Skeleton_Sequence2_Auto75AD61F5143A57209BC5637B9409B782D.tmp' to '../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence2_Auto7.uasset'
+[2016.12.19-06.21.25:588][992]LogSavePackage:Display: Finished SavePackage ../../../../../../../Documents/Unreal Projects/Colluseum/Saved/Autosaves/Game/fuck_Skeleton_Sequence2_Auto7.uasset
+[2016.12.19-06.21.25:588][992]LogFileHelpers: Auto-saving content packages took 0.032
+[2016.12.19-06.24.19:142][101]LogTexture:Display: Building textures: T_Metal_Gold_D (AutoDXT)
+[2016.12.19-06.24.21:301][101]LogMaterial:Warning: Material /Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold needed to have new flag set bUsedWithSkeletalMesh !
+[2016.12.19-06.24.21:304][101]LogMaterial: Missing cached shader map for material M_Metal_Gold, compiling. 
+[2016.12.19-06.24.21:389][101]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.12.19-06.24.21:396][101]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.19-06.24.29:675][565]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-06.24.33:908][821]LogTexture:Display: Building textures: T_Metal_Rust_D (AutoDXT)
+[2016.12.19-06.24.36:264][821]LogTexture:Display: Building textures: T_Metal_Rust_N (BC5)
+[2016.12.19-06.24.36:621][821]LogMaterial:Warning: Material /Game/StarterContent/Materials/M_Metal_Rust.M_Metal_Rust needed to have new flag set bUsedWithSkeletalMesh !
+[2016.12.19-06.24.36:623][821]LogMaterial: Missing cached shader map for material M_Metal_Rust, compiling. 
+[2016.12.19-06.24.36:651][821]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.12.19-06.24.36:662][821]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.19-06.24.39:383][969]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.19-06.24.40:225][ 12]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-06.24.49:223][792]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.19-06.24.49:787][842]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (fuck)
+[2016.12.19-06.26.42:506][786]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.12.19-06.27.07:766][280]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.07:766][280]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.19-06.27.07:801][280]PIE: New page: SIE session: Minimal_Default (Dec 18, 2016, 2:27:07 PM)
+[2016.12.19-06.27.07:813][280]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.12.19-06.27.08:005][280]LogPlayLevel: PIE: StaticDuplicateObject took: (0.191843s)
+[2016.12.19-06.27.08:006][280]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.12.19-06.27.08:006][280]LogPlayLevel: PIE: World Init took: (0.001130s)
+[2016.12.19-06.27.08:007][280]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.194354s)
+[2016.12.19-06.27.08:048][280]LogInit: XAudio2 using 'Speakers / Headphones (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.19-06.27.08:082][280]LogInit: FAudioDevice initialized.
+[2016.12.19-06.27.08:359][280]LogWorld: Game class is 'mode_C'
+[2016.12.19-06.27.08:492][280]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.12.18-22.27.08
+[2016.12.19-06.27.08:550][280]LogWorld: Bringing up level for play took: 0.184955
+[2016.12.19-06.27.08:659][280]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.12.19-06.27.08:803][280]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0012 seconds. Added 11 classes and 0 folders.
+[2016.12.19-06.27.08:816][280]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.724
+[2016.12.19-06.27.08:925][280]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.14:398][695]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.14:670][695]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.33:742][411]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.33:742][411]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.19-06.27.33:742][411]PIE: New page: SIE session: Minimal_Default (Dec 18, 2016, 2:27:33 PM)
+[2016.12.19-06.27.33:742][411]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2016.12.19-06.27.33:895][411]LogPlayLevel: PIE: StaticDuplicateObject took: (0.152883s)
+[2016.12.19-06.27.33:896][411]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.12.19-06.27.33:896][411]LogPlayLevel: PIE: World Init took: (0.000649s)
+[2016.12.19-06.27.33:896][411]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.153782s)
+[2016.12.19-06.27.33:922][411]LogInit: XAudio2 using 'Speakers / Headphones (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.19-06.27.33:927][411]LogInit: FAudioDevice initialized.
+[2016.12.19-06.27.34:001][411]LogWorld: Game class is 'mode_C'
+[2016.12.19-06.27.34:118][411]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2016.12.18-22.27.34
+[2016.12.19-06.27.34:122][411]LogWorld: Bringing up level for play took: 0.119291
+[2016.12.19-06.27.34:123][411]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.12.19-06.27.34:124][411]PIE: Info Play in editor start time for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default 0.031
+[2016.12.19-06.27.34:143][411]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.50:477][574]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.50:532][574]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default'
+[2016.12.19-06.27.56:861][175]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.19-06.28.01:654][588]Cmd: UpdateLandscapeEditorData
+[2016.12.19-06.28.02:734][678]Cmd: UpdateLandscapeEditorData
+[2016.12.19-06.28.10:680][452]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel' has LevelScriptBlueprint '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default:PersistentLevel.Minimal_Default' with GeneratedClass '/Game/StarterContent/Maps/Minimal_Default.Minimal_Default_C' with ClassGeneratedBy '/Game/StarterContent/Maps/Minimal_Defa
