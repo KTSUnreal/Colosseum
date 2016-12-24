@@ -1,9 +1,9 @@
-﻿Log file open, 12/23/16 13:16:03
+﻿Log file open, 12/23/16 17:35:57
 LogInit:Display: Running engine for game: Colluseum
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(891375768) SRandInit(891375769).
+LogInit:Display: RandInit(-1439253608) SRandInit(-1439253500).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.236177
+LogStats: Stats thread started at 0.070357
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -25,8 +25,8 @@ LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.12
-LogInit: Command line:  
-LogInit: Base directory: D:/Program Files/EPIC/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: K:/UnrealE4/Epic Games/4.12/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Using libcurl 7.41.0
 LogInit:  - built for x86_64-pc-win32
@@ -44,377 +44,1397 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.12.23-21.16.04:102][  0]LogInit: Selected Device Profile: [Windows]
-[2016.12.23-21.16.04:102][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.12.23-21.16.04:136][  0]LogInit: Computer: DESKTOP-TAF0IGL
-[2016.12.23-21.16.04:136][  0]LogInit: User: tyler
-[2016.12.23-21.16.04:136][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.12.23-21.16.04:136][  0]LogInit: High frequency timer resolution =3.312793 MHz
-[2016.12.23-21.16.04:136][  0]LogMemory: Memory total: Physical=11.9GB (12GB approx)
-[2016.12.23-21.16.04:136][  0]LogMemory: Platform Memory Stats for Windows
-[2016.12.23-21.16.04:136][  0]LogMemory: Process Physical Memory: 190.39 MB used, 190.39 MB peak
-[2016.12.23-21.16.04:136][  0]LogMemory: Process Virtual Memory: 195.31 MB used, 195.31 MB peak
-[2016.12.23-21.16.04:136][  0]LogMemory: Physical Memory: 6241.38 MB used, 12223.61 MB total
-[2016.12.23-21.16.04:136][  0]LogMemory: Virtual Memory: 553.60 MB used, 134217728.00 MB total
-[2016.12.23-21.16.04:930][  0]LogTextLocalizationManager: No specific translations for ('en-CA') exist, so ('en') translations will be used.
-[2016.12.23-21.16.05:629][  0]LogD3D11RHI: D3D11 adapters:
-[2016.12.23-21.16.05:659][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2016.12.23-21.16.05:659][  0]LogD3D11RHI:       4059/0/6111 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2016.12.23-21.16.05:661][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2016.12.23-21.16.05:661][  0]LogD3D11RHI:       0/0/6111 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2016.12.23-21.16.05:661][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.12.23-21.16.05:666][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.12.23-21.16.05:666][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2016.12.23-21.16.05:666][  0]LogWindows: EnumDisplayDevices:
-[2016.12.23-21.16.05:666][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2016.12.23-21.16.05:667][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2016.12.23-21.16.05:667][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2016.12.23-21.16.05:667][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2016.12.23-21.16.05:667][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2016.12.23-21.16.05:667][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2016.12.23-21.16.05:667][  0]LogD3D11RHI:   Driver Version: 372.90 (internal:21.21.13.7290, unified:372.90)
-[2016.12.23-21.16.05:667][  0]LogD3D11RHI:      Driver Date: 9-16-2016
-[2016.12.23-21.16.05:667][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.12.23-21.16.05:682][  0]LogD3D11RHI: Async texture creation enabled
-[2016.12.23-21.16.05:692][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2016.12.23-21.16.05:693][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (C:/Users/tyler/Colosseum/Intermediate/Shaders/WorkingDirectory/15916/).
-[2016.12.23-21.16.05:693][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/tyler/AppData/Local/Temp/UnrealShaderWorkingDir/009CB1954210321E4D13B4B67A3FCB65/'.
-[2016.12.23-21.16.05:693][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.12.23-21.16.07:981][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.12.23-21.16.07:997][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.12.23-21.16.08:021][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.12.23-21.16.08:046][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.12.23-21.16.08:066][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.12.23-21.16.08:100][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.12.23-21.16.08:117][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.12.23-21.16.08:133][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.12.23-21.16.08:150][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.12.23-21.16.08:166][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.12.23-21.16.08:184][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.12.23-21.16.08:218][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.12.23-21.16.08:218][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.12.23-21.16.08:227][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.12.23-21.16.08:326][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.12.23-21.16.08:339][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.12.23-21.16.08:354][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.12.23-21.16.08:370][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.12.23-21.16.08:407][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.12.23-21.16.08:407][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.12.23-21.16.09:520][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.12.23-21.16.09:865][  0]LogDerivedDataCache: Loaded boot cache 0.34s 48MB C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.12.23-21.16.09:865][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2016.12.23-21.16.09:866][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/tyler/Colosseum/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.12.23-21.16.09:866][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.12.23-21.16.09:866][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/tyler/Colosseum/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.12.23-21.16.09:866][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.12.23-21.16.09:928][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.12.23-21.16.09:941][  0]LogDerivedDataCache: Using Local data cache path C:/Users/tyler/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.12.23-21.16.13:732][  0]LogInit: Selected Device Profile: [Windows]
-[2016.12.23-21.16.13:734][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.12.23-21.16.14:522][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.12.23-21.16.14:522][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.12.23-21.16.14:522][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.12.23-21.16.16:134][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
-[2016.12.23-21.16.16:178][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.038175 seconds
-[2016.12.23-21.16.16:183][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2016.12.23-21.16.16:183][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
-[2016.12.23-21.16.16:183][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.12.23-21.16.16:197][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.12.23-21.16.20:811][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.12.23-21.16.20:811][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.12.23-21.16.35:980][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.12.23-21.16.37:182][  0]SourceControl: Info Source control is disabled
-[2016.12.23-21.16.40:347][  0]LogEngine: Initializing Engine...
-[2016.12.23-21.16.40:380][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.12.23-21.16.40:381][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.12.23-21.16.40:990][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.12.23-21.16.41:006][  0]LogInit: XAudio2 using 'Speakers / Headphones (IDT High Definition Audio CODEC)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.12.23-21.16.41:022][  0]LogInit: FAudioDevice initialized.
-[2016.12.23-21.16.41:054][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/tyler/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.12.23-21.16.41:060][  0]LogInit: Texture streaming: Enabled
-[2016.12.23-21.16.41:179][  0]LogInit: Transaction tracking system initialized
-[2016.12.23-21.16.41:380][  0]BlueprintLog: New page: Editor Load
-[2016.12.23-21.16.42:590][  0]LocalizationService: Info Localization service is disabled
-[2016.12.23-21.16.43:328][  0]LogConsoleResponse:Display: 
-[2016.12.23-21.16.45:025][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.12.23-21.16.45:025][  0]LogCook:Display: Mobile HDR setting 1
-[2016.12.23-21.16.45:543][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tyler/Colosseum/Content/' took 0.02s
-[2016.12.23-21.16.46:843][  0]Cmd: MAP LOAD FILE="C:/Users/tyler/Colosseum/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.12.23-21.16.46:846][  0]LightingResults: New page: Lighting Build
-[2016.12.23-21.16.46:850][  0]MapCheck: New page: Map Check
-[2016.12.23-21.16.46:850][  0]LightingResults: New page: Lighting Build
-[2016.12.23-21.16.48:287][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2016.12.23-21.16.50:207][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.12.23-21.16.50:207][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.12.23-21.16.50:400][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 192.931ms to complete.
-[2016.12.23-21.16.50:400][  0]LogFileHelpers: Loading map 'Minimal_Default' took 3.557
-[2016.12.23-21.16.51:226][  0]LogCollectionManager: Loaded 0 collections in 0.002469 seconds
-[2016.12.23-21.16.51:274][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tyler/Colosseum/Saved/Collections/' took 0.01s
-[2016.12.23-21.16.51:275][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tyler/Colosseum/Content/Developers/tyler/Collections/' took 0.01s
-[2016.12.23-21.16.51:275][  0]LogFileCache: Scanning file cache for directory 'C:/Users/tyler/Colosseum/Content/Collections/' took 0.01s
-[2016.12.23-21.16.51:275][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000008 seconds
-[2016.12.23-21.16.51:284][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2047 classes and 369 folders.
-[2016.12.23-21.16.51:289][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.12.23-21.16.51:290][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.12.23-21.16.51:290][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0006 seconds. Added 12 classes and 0 folders.
-[2016.12.23-21.16.51:298][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2016.12.23-21.16.52:275][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
-[2016.12.23-21.16.52:382][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.12.23-21.16.52:488][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.12.23-21.16.52:497][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.12.23-21.16.52:589][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.12.23-21.16.52:590][  0]LogLoad: Full Startup: 51.31 seconds (BP compile: 0.06 seconds)
-[2016.12.23-21.16.52:590][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.12.23-21.16.52:590][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.12.23-21.16.52:929][  0]LogOcInput: OculusInput pre-init called
-[2016.12.23-21.16.52:949][  0]SourceControl: Info On branch master
-[2016.12.23-21.16.52:949][  0]SourceControl: Info Your branch is up-to-date with 'origin/master'.
-[2016.12.23-21.16.52:949][  0]SourceControl: Info Changes to be committed:
-[2016.12.23-21.16.52:949][  0]SourceControl: Info   (use "git reset HEAD <file>..." to unstage)
-[2016.12.23-21.16.52:949][  0]SourceControl: Info 	new file:   Content/BodySculptWithHands_03__1_.uasset
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	new file:   Content/BodySculptWithHands_03__1__Skeleton.uasset
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	new file:   Content/BodySculptWithHands_03__1__Skeleton2.uasset
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	new file:   Content/BodySculptWithHands_03__1__Skeleton2_Sequence.uasset
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	new file:   Content/fuck_Skeleton_Sequence3.uasset
-[2016.12.23-21.16.52:950][  0]SourceControl: Info Changes not staged for commit:
-[2016.12.23-21.16.52:950][  0]SourceControl: Info   (use "git add/rm <file>..." to update what will be committed)
-[2016.12.23-21.16.52:950][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	deleted:    Saved/Logs/Colluseum-backup-2016.12.20-19.39.16.log
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	deleted:    Saved/Logs/Colluseum-backup-2016.12.23-00.51.22.log
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	deleted:    Saved/Logs/Colluseum-backup-2016.12.23-01.11.26.log
-[2016.12.23-21.16.52:950][  0]SourceControl: Info 	modified:   Saved/Logs/Colluseum.log
-[2016.12.23-21.16.52:950][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.12.23-21.16.53:254][  0]LogRenderer: Reallocating scene render targets to support 1056x512 (Frame:2).
-[2016.12.23-21.16.53:335][  1]Cmd: UpdateLandscapeEditorData -warnings
-[2016.12.23-21.16.53:741][  2]LogAssetRegistry: Asset discovery search completed in 37.6292 seconds
-[2016.12.23-21.16.53:741][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.12.23-21.16.53:741][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
-[2016.12.23-21.20.54:480][724]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.12.23-21.20.54:643][725]Cmd: QUIT_EDITOR
-[2016.12.23-21.20.54:690][725]LogExit: Preparing to exit.
-[2016.12.23-21.20.55:220][725]LogExit: Editor shut down
-[2016.12.23-21.20.55:220][725]LogExit: Transaction tracking system shut down
-[2016.12.23-21.20.55:348][725]LogObj: Freed 0b from 0 cluster array pools.
-[2016.12.23-21.20.55:348][725]LogExit: Object subsystem successfully closed.
-[2016.12.23-21.20.55:374][725]LogD3D11RHI: Shutdown
-[2016.12.23-21.20.55:374][725]LogD3D11RHI: CleanupD3DDevice
-[2016.12.23-21.20.55:525][725]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.12.23-21.20.55:585][725]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
-[2016.12.23-21.20.55:585][725]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
-[2016.12.23-21.20.55:585][725]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
-[2016.12.23-21.20.55:585][725]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
-[2016.12.23-21.20.55:585][725]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module BspMode (198)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module SessionServices (188)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
-[2016.12.23-21.20.55:586][725]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
-[2016.12.23-21.20.55:587][725]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module MergeActors (176)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module SizeMap (175)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module TreeMap (174)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
-[2016.12.23-21.20.56:121][725]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
-[2016.12.23-21.20.56:122][725]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
-[2016.12.23-21.20.56:151][725]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module XmlParser (166)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module Blutility (165)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
-[2016.12.23-21.20.56:152][725]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
-[2016.12.23-21.20.56:153][725]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
-[2016.12.23-21.20.56:153][725]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
-[2016.12.23-21.20.56:153][725]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
-[2016.12.23-21.20.56:155][725]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
-[2016.12.23-21.20.56:155][725]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module AutomationController (154)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module Layers (152)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module Persona (148)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module Kismet (147)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
-[2016.12.23-21.20.56:331][725]LogModuleManager: Shutting down and abandoning module Toolbox (144)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module OutputLog (141)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module GammaUI (140)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module Documentation (139)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module Analytics (136)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module PortalServices (135)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
-[2016.12.23-21.20.56:332][725]LogModuleManager: Shutting down and abandoning module AIModule (130)
-[2016.12.23-21.20.56:333][725]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
-[2016.12.23-21.20.56:370][725]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SteamVR (125)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module OculusInput (122)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module CableComponent (120)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module SourceControl (106)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
-[2016.12.23-21.20.56:371][725]LogModuleManager: Shutting down and abandoning module HotReload (99)
-[2016.12.23-21.20.56:372][725]LogModuleManager: Shutting down and abandoning module MainFrame (98)
-[2016.12.23-21.20.56:372][725]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
-[2016.12.23-21.20.56:372][725]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
-[2016.12.23-21.20.56:373][725]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
-[2016.12.23-21.20.56:373][725]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module Paper2D (92)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module Media (90)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module VREditor (84)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module Sequencer (78)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module AssetTools (75)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module UMG (73)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module Slate (71)
-[2016.12.23-21.20.56:474][725]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module Networking (65)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module Core (64)
-[2016.12.23-21.20.56:479][725]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
-[2016.12.23-21.20.56:480][725]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
-[2016.12.23-21.20.56:639][725]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
-[2016.12.23-21.20.56:639][725]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
-[2016.12.23-21.20.56:639][725]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
-[2016.12.23-21.20.56:639][725]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
-[2016.12.23-21.20.56:734][725]LogDerivedDataCache: Shutdown
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
-[2016.12.23-21.20.56:734][725]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.12.23-21.20.56:735][725]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.12.23-21.20.56:736][725]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.12.23-21.20.56:736][725]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.12.23-21.20.56:736][725]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.12.23-21.20.56:736][725]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.12.23-21.20.56:736][725]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.12.23-21.20.59:739][725]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.12.23-21.20.59:740][725]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.12.23-21.20.59:741][725]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.12.23-21.20.59:741][725]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.12.23-21.20.59:741][725]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.12.23-21.20.59:741][725]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.12.23-21.20.59:742][725]LogExit: Exiting.
-[2016.12.23-21.20.59:743][725]Log file closed, 12/23/16 13:20:59
+[2016.12.24-01.35.57:701][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.24-01.35.57:701][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.12.24-01.35.57:722][  0]LogInit: Computer: KYLESPC
+[2016.12.24-01.35.57:722][  0]LogInit: User: kyle
+[2016.12.24-01.35.57:722][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.12.24-01.35.57:722][  0]LogInit: High frequency timer resolution =24.000000 MHz
+[2016.12.24-01.35.57:722][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2016.12.24-01.35.57:722][  0]LogMemory: Platform Memory Stats for Windows
+[2016.12.24-01.35.57:722][  0]LogMemory: Process Physical Memory: 189.85 MB used, 189.85 MB peak
+[2016.12.24-01.35.57:722][  0]LogMemory: Process Virtual Memory: 195.28 MB used, 195.28 MB peak
+[2016.12.24-01.35.57:722][  0]LogMemory: Physical Memory: 8362.85 MB used, 16336.18 MB total
+[2016.12.24-01.35.57:722][  0]LogMemory: Virtual Memory: 538.91 MB used, 134217728.00 MB total
+[2016.12.24-01.35.57:762][  0]LogTextLocalizationManager: No specific translations for ('en-CA') exist, so ('en') translations will be used.
+[2016.12.24-01.35.58:209][  0]LogD3D11RHI: D3D11 adapters:
+[2016.12.24-01.35.58:854][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2016.12.24-01.35.58:854][  0]LogD3D11RHI:       6100/0/8168 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.12.24-01.35.58:856][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.12.24-01.35.58:856][  0]LogD3D11RHI:       0/0/8168 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.12.24-01.35.58:856][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.12.24-01.35.58:861][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.12.24-01.35.58:861][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2016.12.24-01.35.58:861][  0]LogWindows: EnumDisplayDevices:
+[2016.12.24-01.35.58:861][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2016.12.24-01.35.58:861][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2016.12.24-01.35.58:861][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2016.12.24-01.35.58:861][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2016.12.24-01.35.58:862][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.12.24-01.35.58:862][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2016.12.24-01.35.58:862][  0]LogD3D11RHI:   Driver Version: 376.19 (internal:21.21.13.7619, unified:376.19)
+[2016.12.24-01.35.58:862][  0]LogD3D11RHI:      Driver Date: 12-1-2016
+[2016.12.24-01.35.58:862][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.12.24-01.35.59:375][  0]LogD3D11RHI: Async texture creation enabled
+[2016.12.24-01.35.59:440][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.12.24-01.35.59:440][  0]LogShaderCompilers: Guid format shader working directory is 21 characters bigger than the processId version (C:/Users/kyle/Colosseum/Intermediate/Shaders/WorkingDirectory/16596/).
+[2016.12.24-01.35.59:440][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/kyle/AppData/Local/Temp/UnrealShaderWorkingDir/3137C0A140431B9A97CC4B9DDE996BF0/'.
+[2016.12.24-01.35.59:441][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.12.24-01.36.00:981][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.12.24-01.36.00:988][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.12.24-01.36.00:996][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.12.24-01.36.01:004][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.12.24-01.36.01:013][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.12.24-01.36.01:020][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.12.24-01.36.01:027][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.12.24-01.36.01:034][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.12.24-01.36.01:041][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.12.24-01.36.01:048][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.12.24-01.36.01:054][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.12.24-01.36.01:070][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.12.24-01.36.01:071][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.12.24-01.36.01:072][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.12.24-01.36.01:096][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.12.24-01.36.01:103][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.12.24-01.36.01:109][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.12.24-01.36.01:116][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.12.24-01.36.01:124][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.12.24-01.36.01:124][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.12.24-01.36.01:184][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.12.24-01.36.01:557][  0]LogDerivedDataCache: Loaded boot cache 0.37s 48MB C:/Users/kyle/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.24-01.36.01:558][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/kyle/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.12.24-01.36.01:558][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/kyle/Colosseum/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.12.24-01.36.01:558][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.12.24-01.36.01:558][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/kyle/Colosseum/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.12.24-01.36.01:558][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.12.24-01.36.01:574][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.12.24-01.36.01:586][  0]LogDerivedDataCache: Using Local data cache path C:/Users/kyle/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.12.24-01.36.01:764][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.24-01.36.01:765][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.12.24-01.36.02:029][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.12.24-01.36.02:029][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.12.24-01.36.02:029][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.12.24-01.36.02:445][  0]LogAssetRegistry: FAssetRegistry took 0.0214 seconds to start up
+[2016.12.24-01.36.02:466][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.019976 seconds
+[2016.12.24-01.36.02:472][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.12.24-01.36.02:472][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.12.24-01.36.02:472][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.12.24-01.36.02:476][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.12.24-01.36.02:768][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.24-01.36.02:768][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.24-01.36.04:500][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.12.24-01.36.04:805][  0]SourceControl: Info Source control is disabled
+[2016.12.24-01.36.06:110][  0]LogEngine: Initializing Engine...
+[2016.12.24-01.36.06:115][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.12.24-01.36.06:118][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.12.24-01.36.06:398][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.12.24-01.36.06:424][  0]LogInit: XAudio2 using 'Speakers (2- Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.12.24-01.36.06:446][  0]LogInit: FAudioDevice initialized.
+[2016.12.24-01.36.06:483][  0]LogDerivedDataCache: Saved boot cache 0.04s 48MB C:/Users/kyle/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.24-01.36.06:490][  0]LogInit: Texture streaming: Enabled
+[2016.12.24-01.36.06:520][  0]LogInit: Transaction tracking system initialized
+[2016.12.24-01.36.06:599][  0]BlueprintLog: New page: Editor Load
+[2016.12.24-01.36.06:700][  0]LocalizationService: Info Localization service is disabled
+[2016.12.24-01.36.06:779][  0]LogConsoleResponse:Display: 
+[2016.12.24-01.36.07:201][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.12.24-01.36.07:201][  0]LogCook:Display: Mobile HDR setting 1
+[2016.12.24-01.36.07:734][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kyle/Colosseum/Content/' took 0.01s
+[2016.12.24-01.36.07:734][  0]Cmd: MAP LOAD FILE="C:/Users/kyle/Colosseum/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.12.24-01.36.07:735][  0]LightingResults: New page: Lighting Build
+[2016.12.24-01.36.07:738][  0]MapCheck: New page: Map Check
+[2016.12.24-01.36.07:738][  0]LightingResults: New page: Lighting Build
+[2016.12.24-01.36.09:431][  0]LogMaterial: Missing cached shader map for material Material_0, compiling. 
+[2016.12.24-01.36.09:471][  0]LogMaterial: Missing cached shader map for material Material_1, compiling. 
+[2016.12.24-01.36.09:482][  0]LogMaterial: Missing cached shader map for material Material_2, compiling. 
+[2016.12.24-01.36.09:493][  0]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2016.12.24-01.36.09:685][  0]LogTexture:Display: Building textures: T_Rock_Sandstone_D (AutoDXT)
+[2016.12.24-01.36.14:124][  0]LogTexture:Display: Building textures: T_Rock_Sandstone_N (BC5)
+[2016.12.24-01.36.15:223][  0]LogTexture:Display: Building textures: T_Perlin_Noise_M (AutoDXT)
+[2016.12.24-01.36.21:496][  0]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2016.12.24-01.36.21:523][  0]LogStaticMesh: Building static mesh colusseumfloor...
+[2016.12.24-01.36.25:330][  0]LogStaticMesh: Built static mesh [3.81s] /Game/colusseumfloor.colusseumfloor
+[2016.12.24-01.36.25:658][  0]LogStaticMesh: Building static mesh ring...
+[2016.12.24-01.36.25:664][  0]LogStaticMesh: Built static mesh [0.01s] /Game/ring.ring
+[2016.12.24-01.36.25:718][  0]LogTexture:Display: Building textures: Texture2D_0 (BGRA8)
+[2016.12.24-01.36.25:735][  0]LogTexture:Display: Building textures: Texture2D_1 (BGRA8)
+[2016.12.24-01.36.25:748][  0]LogTexture:Display: Building textures: Texture2D_12 (BGRA8)
+[2016.12.24-01.36.25:759][  0]LogTexture:Display: Building textures: Texture2D_13 (BGRA8)
+[2016.12.24-01.36.25:771][  0]LogTexture:Display: Building textures: Texture2D_14 (BGRA8)
+[2016.12.24-01.36.25:794][  0]LogTexture:Display: Building textures: Texture2D_15 (BGRA8)
+[2016.12.24-01.36.25:807][  0]LogTexture:Display: Building textures: Texture2D_2 (BGRA8)
+[2016.12.24-01.36.25:817][  0]LogTexture:Display: Building textures: Texture2D_3 (BGRA8)
+[2016.12.24-01.36.25:835][  0]LogTexture:Display: Building textures: Texture2D_4 (BGRA8)
+[2016.12.24-01.36.25:863][  0]LogTexture:Display: Building textures: Texture2D_5 (BGRA8)
+[2016.12.24-01.36.25:875][  0]LogTexture:Display: Building textures: Texture2D_6 (BGRA8)
+[2016.12.24-01.36.25:885][  0]LogTexture:Display: Building textures: Texture2D_7 (BGRA8)
+[2016.12.24-01.36.25:920][  0]LogTexture:Display: Building textures: Texture2D_8 (BGRA8)
+[2016.12.24-01.36.25:944][  0]LogTexture:Display: Building textures: Texture2D_9 (BGRA8)
+[2016.12.24-01.36.25:955][  0]LogTexture:Display: Building textures: Texture2D_10 (BGRA8)
+[2016.12.24-01.36.25:965][  0]LogTexture:Display: Building textures: Texture2D_11 (BGRA8)
+[2016.12.24-01.36.26:013][  0]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.12.24-01.36.26:050][  0]LogTexture:Display: Building textures: HQ_Lightmap1_10 (AutoDXT)
+[2016.12.24-01.36.26:076][  0]LogTexture:Display: Building textures: HQ_Lightmap1_100 (AutoDXT)
+[2016.12.24-01.36.26:109][  0]LogTexture:Display: Building textures: HQ_Lightmap1_101 (AutoDXT)
+[2016.12.24-01.36.26:144][  0]LogTexture:Display: Building textures: HQ_Lightmap1_102 (AutoDXT)
+[2016.12.24-01.36.26:178][  0]LogTexture:Display: Building textures: HQ_Lightmap1_103 (AutoDXT)
+[2016.12.24-01.36.26:210][  0]LogTexture:Display: Building textures: HQ_Lightmap1_104 (AutoDXT)
+[2016.12.24-01.36.26:235][  0]LogTexture:Display: Building textures: HQ_Lightmap1_105 (AutoDXT)
+[2016.12.24-01.36.26:272][  0]LogTexture:Display: Building textures: HQ_Lightmap1_106 (AutoDXT)
+[2016.12.24-01.36.26:301][  0]LogTexture:Display: Building textures: HQ_Lightmap1_107 (AutoDXT)
+[2016.12.24-01.36.26:327][  0]LogTexture:Display: Building textures: HQ_Lightmap1_108 (AutoDXT)
+[2016.12.24-01.36.26:370][  0]LogTexture:Display: Building textures: HQ_Lightmap1_109 (AutoDXT)
+[2016.12.24-01.36.26:399][  0]LogTexture:Display: Building textures: HQ_Lightmap1_11 (AutoDXT)
+[2016.12.24-01.36.26:433][  0]LogTexture:Display: Building textures: HQ_Lightmap1_110 (AutoDXT)
+[2016.12.24-01.36.26:465][  0]LogTexture:Display: Building textures: HQ_Lightmap1_111 (AutoDXT)
+[2016.12.24-01.36.26:496][  0]LogTexture:Display: Building textures: HQ_Lightmap1_112 (AutoDXT)
+[2016.12.24-01.36.26:526][  0]LogTexture:Display: Building textures: HQ_Lightmap1_113 (AutoDXT)
+[2016.12.24-01.36.26:562][  0]LogTexture:Display: Building textures: HQ_Lightmap1_114 (AutoDXT)
+[2016.12.24-01.36.26:604][  0]LogTexture:Display: Building textures: HQ_Lightmap1_115 (AutoDXT)
+[2016.12.24-01.36.26:629][  0]LogTexture:Display: Building textures: HQ_Lightmap1_116 (AutoDXT)
+[2016.12.24-01.36.26:673][  0]LogTexture:Display: Building textures: HQ_Lightmap1_117 (AutoDXT)
+[2016.12.24-01.36.26:723][  0]LogTexture:Display: Building textures: HQ_Lightmap1_118 (AutoDXT)
+[2016.12.24-01.36.26:749][  0]LogTexture:Display: Building textures: HQ_Lightmap1_119 (AutoDXT)
+[2016.12.24-01.36.26:799][  0]LogTexture:Display: Building textures: HQ_Lightmap1_12 (AutoDXT)
+[2016.12.24-01.36.26:826][  0]LogTexture:Display: Building textures: HQ_Lightmap1_120 (AutoDXT)
+[2016.12.24-01.36.26:878][  0]LogTexture:Display: Building textures: HQ_Lightmap1_121 (AutoDXT)
+[2016.12.24-01.36.26:948][  0]LogTexture:Display: Building textures: HQ_Lightmap1_122 (AutoDXT)
+[2016.12.24-01.36.26:973][  0]LogTexture:Display: Building textures: HQ_Lightmap1_123 (AutoDXT)
+[2016.12.24-01.36.27:028][  0]LogTexture:Display: Building textures: HQ_Lightmap1_124 (AutoDXT)
+[2016.12.24-01.36.27:053][  0]LogTexture:Display: Building textures: HQ_Lightmap1_125 (AutoDXT)
+[2016.12.24-01.36.27:100][  0]LogTexture:Display: Building textures: HQ_Lightmap1_126 (AutoDXT)
+[2016.12.24-01.36.27:153][  0]LogTexture:Display: Building textures: HQ_Lightmap1_127 (AutoDXT)
+[2016.12.24-01.36.27:198][  0]LogTexture:Display: Building textures: HQ_Lightmap1_128 (AutoDXT)
+[2016.12.24-01.36.27:229][  0]LogTexture:Display: Building textures: HQ_Lightmap1_129 (AutoDXT)
+[2016.12.24-01.36.27:256][  0]LogTexture:Display: Building textures: HQ_Lightmap1_13 (AutoDXT)
+[2016.12.24-01.36.27:285][  0]LogTexture:Display: Building textures: HQ_Lightmap1_130 (AutoDXT)
+[2016.12.24-01.36.27:315][  0]LogTexture:Display: Building textures: HQ_Lightmap1_131 (AutoDXT)
+[2016.12.24-01.36.27:341][  0]LogTexture:Display: Building textures: HQ_Lightmap1_132 (AutoDXT)
+[2016.12.24-01.36.27:371][  0]LogTexture:Display: Building textures: HQ_Lightmap1_133 (AutoDXT)
+[2016.12.24-01.36.27:400][  0]LogTexture:Display: Building textures: HQ_Lightmap1_134 (AutoDXT)
+[2016.12.24-01.36.27:434][  0]LogTexture:Display: Building textures: HQ_Lightmap1_135 (AutoDXT)
+[2016.12.24-01.36.27:470][  0]LogTexture:Display: Building textures: HQ_Lightmap1_136 (AutoDXT)
+[2016.12.24-01.36.27:496][  0]LogTexture:Display: Building textures: HQ_Lightmap1_137 (AutoDXT)
+[2016.12.24-01.36.27:537][  0]LogTexture:Display: Building textures: HQ_Lightmap1_138 (AutoDXT)
+[2016.12.24-01.36.27:572][  0]LogTexture:Display: Building textures: HQ_Lightmap1_139 (AutoDXT)
+[2016.12.24-01.36.27:596][  0]LogTexture:Display: Building textures: HQ_Lightmap1_14 (AutoDXT)
+[2016.12.24-01.36.27:636][  0]LogTexture:Display: Building textures: HQ_Lightmap1_140 (AutoDXT)
+[2016.12.24-01.36.27:662][  0]LogTexture:Display: Building textures: HQ_Lightmap1_141 (AutoDXT)
+[2016.12.24-01.36.27:697][  0]LogTexture:Display: Building textures: HQ_Lightmap1_142 (AutoDXT)
+[2016.12.24-01.36.27:724][  0]LogTexture:Display: Building textures: HQ_Lightmap1_143 (AutoDXT)
+[2016.12.24-01.36.27:750][  0]LogTexture:Display: Building textures: HQ_Lightmap1_144 (AutoDXT)
+[2016.12.24-01.36.27:782][  0]LogTexture:Display: Building textures: HQ_Lightmap1_145 (AutoDXT)
+[2016.12.24-01.36.27:808][  0]LogTexture:Display: Building textures: HQ_Lightmap1_146 (AutoDXT)
+[2016.12.24-01.36.27:836][  0]LogTexture:Display: Building textures: HQ_Lightmap1_147 (AutoDXT)
+[2016.12.24-01.36.27:870][  0]LogTexture:Display: Building textures: HQ_Lightmap1_148 (AutoDXT)
+[2016.12.24-01.36.27:896][  0]LogTexture:Display: Building textures: HQ_Lightmap1_149 (AutoDXT)
+[2016.12.24-01.36.27:926][  0]LogTexture:Display: Building textures: HQ_Lightmap1_15 (AutoDXT)
+[2016.12.24-01.36.27:958][  0]LogTexture:Display: Building textures: HQ_Lightmap1_150 (AutoDXT)
+[2016.12.24-01.36.27:990][  0]LogTexture:Display: Building textures: HQ_Lightmap1_151 (AutoDXT)
+[2016.12.24-01.36.28:022][  0]LogTexture:Display: Building textures: HQ_Lightmap1_152 (AutoDXT)
+[2016.12.24-01.36.28:049][  0]LogTexture:Display: Building textures: HQ_Lightmap1_153 (AutoDXT)
+[2016.12.24-01.36.28:082][  0]LogTexture:Display: Building textures: HQ_Lightmap1_154 (AutoDXT)
+[2016.12.24-01.36.28:109][  0]LogTexture:Display: Building textures: HQ_Lightmap1_155 (AutoDXT)
+[2016.12.24-01.36.28:138][  0]LogTexture:Display: Building textures: HQ_Lightmap1_156 (AutoDXT)
+[2016.12.24-01.36.28:166][  0]LogTexture:Display: Building textures: HQ_Lightmap1_157 (AutoDXT)
+[2016.12.24-01.36.28:197][  0]LogTexture:Display: Building textures: HQ_Lightmap1_158 (AutoDXT)
+[2016.12.24-01.36.28:225][  0]LogTexture:Display: Building textures: HQ_Lightmap1_159 (AutoDXT)
+[2016.12.24-01.36.28:251][  0]LogTexture:Display: Building textures: HQ_Lightmap1_16 (AutoDXT)
+[2016.12.24-01.36.28:285][  0]LogTexture:Display: Building textures: HQ_Lightmap1_160 (AutoDXT)
+[2016.12.24-01.36.28:320][  0]LogTexture:Display: Building textures: HQ_Lightmap1_161 (AutoDXT)
+[2016.12.24-01.36.28:351][  0]LogTexture:Display: Building textures: HQ_Lightmap1_162 (AutoDXT)
+[2016.12.24-01.36.28:388][  0]LogTexture:Display: Building textures: HQ_Lightmap1_163 (AutoDXT)
+[2016.12.24-01.36.28:414][  0]LogTexture:Display: Building textures: HQ_Lightmap1_164 (AutoDXT)
+[2016.12.24-01.36.28:439][  0]LogTexture:Display: Building textures: HQ_Lightmap1_165 (AutoDXT)
+[2016.12.24-01.36.28:465][  0]LogTexture:Display: Building textures: HQ_Lightmap1_166 (AutoDXT)
+[2016.12.24-01.36.28:495][  0]LogTexture:Display: Building textures: HQ_Lightmap1_167 (AutoDXT)
+[2016.12.24-01.36.28:523][  0]LogTexture:Display: Building textures: HQ_Lightmap1_168 (AutoDXT)
+[2016.12.24-01.36.28:558][  0]LogTexture:Display: Building textures: HQ_Lightmap1_169 (AutoDXT)
+[2016.12.24-01.36.28:588][  0]LogTexture:Display: Building textures: HQ_Lightmap1_17 (AutoDXT)
+[2016.12.24-01.36.28:613][  0]LogTexture:Display: Building textures: HQ_Lightmap1_170 (AutoDXT)
+[2016.12.24-01.36.28:643][  0]LogTexture:Display: Building textures: HQ_Lightmap1_171 (AutoDXT)
+[2016.12.24-01.36.28:673][  0]LogTexture:Display: Building textures: HQ_Lightmap1_172 (AutoDXT)
+[2016.12.24-01.36.28:713][  0]LogTexture:Display: Building textures: HQ_Lightmap1_173 (AutoDXT)
+[2016.12.24-01.36.28:738][  0]LogTexture:Display: Building textures: HQ_Lightmap1_174 (AutoDXT)
+[2016.12.24-01.36.28:768][  0]LogTexture:Display: Building textures: HQ_Lightmap1_175 (AutoDXT)
+[2016.12.24-01.36.28:794][  0]LogTexture:Display: Building textures: HQ_Lightmap1_176 (AutoDXT)
+[2016.12.24-01.36.28:830][  0]LogTexture:Display: Building textures: HQ_Lightmap1_177 (AutoDXT)
+[2016.12.24-01.36.28:858][  0]LogTexture:Display: Building textures: HQ_Lightmap1_178 (AutoDXT)
+[2016.12.24-01.36.28:883][  0]LogTexture:Display: Building textures: HQ_Lightmap1_179 (AutoDXT)
+[2016.12.24-01.36.28:914][  0]LogTexture:Display: Building textures: HQ_Lightmap1_18 (AutoDXT)
+[2016.12.24-01.36.28:941][  0]LogTexture:Display: Building textures: HQ_Lightmap1_180 (AutoDXT)
+[2016.12.24-01.36.28:972][  0]LogTexture:Display: Building textures: HQ_Lightmap1_181 (AutoDXT)
+[2016.12.24-01.36.29:006][  0]LogTexture:Display: Building textures: HQ_Lightmap1_182 (AutoDXT)
+[2016.12.24-01.36.29:031][  0]LogTexture:Display: Building textures: HQ_Lightmap1_183 (AutoDXT)
+[2016.12.24-01.36.29:067][  0]LogTexture:Display: Building textures: HQ_Lightmap1_184 (AutoDXT)
+[2016.12.24-01.36.29:091][  0]LogTexture:Display: Building textures: HQ_Lightmap1_185 (AutoDXT)
+[2016.12.24-01.36.29:131][  0]LogTexture:Display: Building textures: HQ_Lightmap1_186 (AutoDXT)
+[2016.12.24-01.36.29:167][  0]LogTexture:Display: Building textures: HQ_Lightmap1_187 (AutoDXT)
+[2016.12.24-01.36.29:200][  0]LogTexture:Display: Building textures: HQ_Lightmap1_188 (AutoDXT)
+[2016.12.24-01.36.29:235][  0]LogTexture:Display: Building textures: HQ_Lightmap1_189 (AutoDXT)
+[2016.12.24-01.36.29:267][  0]LogTexture:Display: Building textures: HQ_Lightmap1_19 (AutoDXT)
+[2016.12.24-01.36.29:302][  0]LogTexture:Display: Building textures: HQ_Lightmap1_190 (AutoDXT)
+[2016.12.24-01.36.29:329][  0]LogTexture:Display: Building textures: HQ_Lightmap1_191 (AutoDXT)
+[2016.12.24-01.36.29:357][  0]LogTexture:Display: Building textures: HQ_Lightmap1_192 (AutoDXT)
+[2016.12.24-01.36.29:384][  0]LogTexture:Display: Building textures: HQ_Lightmap1_193 (AutoDXT)
+[2016.12.24-01.36.29:409][  0]LogTexture:Display: Building textures: HQ_Lightmap1_194 (AutoDXT)
+[2016.12.24-01.36.29:453][  0]LogTexture:Display: Building textures: HQ_Lightmap1_195 (AutoDXT)
+[2016.12.24-01.36.29:485][  0]LogTexture:Display: Building textures: HQ_Lightmap1_196 (AutoDXT)
+[2016.12.24-01.36.29:512][  0]LogTexture:Display: Building textures: HQ_Lightmap1_197 (AutoDXT)
+[2016.12.24-01.36.29:553][  0]LogTexture:Display: Building textures: HQ_Lightmap1_198 (AutoDXT)
+[2016.12.24-01.36.29:590][  0]LogTexture:Display: Building textures: HQ_Lightmap1_199 (AutoDXT)
+[2016.12.24-01.36.29:626][  0]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2016.12.24-01.36.29:664][  0]LogTexture:Display: Building textures: HQ_Lightmap1_20 (AutoDXT)
+[2016.12.24-01.36.29:704][  0]LogTexture:Display: Building textures: HQ_Lightmap1_200 (AutoDXT)
+[2016.12.24-01.36.29:729][  0]LogTexture:Display: Building textures: HQ_Lightmap1_201 (AutoDXT)
+[2016.12.24-01.36.29:767][  0]LogTexture:Display: Building textures: HQ_Lightmap1_202 (AutoDXT)
+[2016.12.24-01.36.29:793][  0]LogTexture:Display: Building textures: HQ_Lightmap1_203 (AutoDXT)
+[2016.12.24-01.36.29:829][  0]LogTexture:Display: Building textures: HQ_Lightmap1_204 (AutoDXT)
+[2016.12.24-01.36.29:856][  0]LogTexture:Display: Building textures: HQ_Lightmap1_205 (AutoDXT)
+[2016.12.24-01.36.29:882][  0]LogTexture:Display: Building textures: HQ_Lightmap1_206 (AutoDXT)
+[2016.12.24-01.36.29:918][  0]LogTexture:Display: Building textures: HQ_Lightmap1_207 (AutoDXT)
+[2016.12.24-01.36.29:956][  0]LogTexture:Display: Building textures: HQ_Lightmap1_208 (AutoDXT)
+[2016.12.24-01.36.29:981][  0]LogTexture:Display: Building textures: HQ_Lightmap1_209 (AutoDXT)
+[2016.12.24-01.36.30:015][  0]LogTexture:Display: Building textures: HQ_Lightmap1_21 (AutoDXT)
+[2016.12.24-01.36.30:040][  0]LogTexture:Display: Building textures: HQ_Lightmap1_210 (AutoDXT)
+[2016.12.24-01.36.30:084][  0]LogTexture:Display: Building textures: HQ_Lightmap1_211 (AutoDXT)
+[2016.12.24-01.36.30:125][  0]LogTexture:Display: Building textures: HQ_Lightmap1_212 (AutoDXT)
+[2016.12.24-01.36.30:151][  0]LogTexture:Display: Building textures: HQ_Lightmap1_213 (AutoDXT)
+[2016.12.24-01.36.30:194][  0]LogTexture:Display: Building textures: HQ_Lightmap1_214 (AutoDXT)
+[2016.12.24-01.36.30:219][  0]LogTexture:Display: Building textures: HQ_Lightmap1_215 (AutoDXT)
+[2016.12.24-01.36.30:256][  0]LogTexture:Display: Building textures: HQ_Lightmap1_216 (AutoDXT)
+[2016.12.24-01.36.30:296][  0]LogTexture:Display: Building textures: HQ_Lightmap1_217 (AutoDXT)
+[2016.12.24-01.36.30:321][  0]LogTexture:Display: Building textures: HQ_Lightmap1_218 (AutoDXT)
+[2016.12.24-01.36.30:359][  0]LogTexture:Display: Building textures: HQ_Lightmap1_219 (AutoDXT)
+[2016.12.24-01.36.30:385][  0]LogTexture:Display: Building textures: HQ_Lightmap1_22 (AutoDXT)
+[2016.12.24-01.36.30:444][  0]LogTexture:Display: Building textures: HQ_Lightmap1_220 (AutoDXT)
+[2016.12.24-01.36.30:478][  0]LogTexture:Display: Building textures: HQ_Lightmap1_221 (AutoDXT)
+[2016.12.24-01.36.30:523][  0]LogTexture:Display: Building textures: HQ_Lightmap1_222 (AutoDXT)
+[2016.12.24-01.36.30:550][  0]LogTexture:Display: Building textures: HQ_Lightmap1_223 (AutoDXT)
+[2016.12.24-01.36.30:597][  0]LogTexture:Display: Building textures: HQ_Lightmap1_224 (AutoDXT)
+[2016.12.24-01.36.30:627][  0]LogTexture:Display: Building textures: HQ_Lightmap1_225 (AutoDXT)
+[2016.12.24-01.36.30:658][  0]LogTexture:Display: Building textures: HQ_Lightmap1_226 (AutoDXT)
+[2016.12.24-01.36.30:684][  0]LogTexture:Display: Building textures: HQ_Lightmap1_227 (AutoDXT)
+[2016.12.24-01.36.30:709][  0]LogTexture:Display: Building textures: HQ_Lightmap1_228 (AutoDXT)
+[2016.12.24-01.36.30:733][  0]LogTexture:Display: Building textures: HQ_Lightmap1_229 (AutoDXT)
+[2016.12.24-01.36.30:761][  0]LogTexture:Display: Building textures: HQ_Lightmap1_23 (AutoDXT)
+[2016.12.24-01.36.30:785][  0]LogTexture:Display: Building textures: HQ_Lightmap1_230 (AutoDXT)
+[2016.12.24-01.36.30:811][  0]LogTexture:Display: Building textures: HQ_Lightmap1_231 (AutoDXT)
+[2016.12.24-01.36.30:845][  0]LogTexture:Display: Building textures: HQ_Lightmap1_232 (AutoDXT)
+[2016.12.24-01.36.30:870][  0]LogTexture:Display: Building textures: HQ_Lightmap1_233 (AutoDXT)
+[2016.12.24-01.36.30:897][  0]LogTexture:Display: Building textures: HQ_Lightmap1_234 (AutoDXT)
+[2016.12.24-01.36.30:922][  0]LogTexture:Display: Building textures: HQ_Lightmap1_235 (AutoDXT)
+[2016.12.24-01.36.30:964][  0]LogTexture:Display: Building textures: HQ_Lightmap1_236 (AutoDXT)
+[2016.12.24-01.36.30:989][  0]LogTexture:Display: Building textures: HQ_Lightmap1_237 (AutoDXT)
+[2016.12.24-01.36.31:015][  0]LogTexture:Display: Building textures: HQ_Lightmap1_238 (AutoDXT)
+[2016.12.24-01.36.31:043][  0]LogTexture:Display: Building textures: HQ_Lightmap1_239 (AutoDXT)
+[2016.12.24-01.36.31:068][  0]LogTexture:Display: Building textures: HQ_Lightmap1_24 (AutoDXT)
+[2016.12.24-01.36.31:095][  0]LogTexture:Display: Building textures: HQ_Lightmap1_240 (AutoDXT)
+[2016.12.24-01.36.31:121][  0]LogTexture:Display: Building textures: HQ_Lightmap1_241 (AutoDXT)
+[2016.12.24-01.36.31:145][  0]LogTexture:Display: Building textures: HQ_Lightmap1_242 (AutoDXT)
+[2016.12.24-01.36.31:174][  0]LogTexture:Display: Building textures: HQ_Lightmap1_243 (AutoDXT)
+[2016.12.24-01.36.31:200][  0]LogTexture:Display: Building textures: HQ_Lightmap1_244 (AutoDXT)
+[2016.12.24-01.36.31:226][  0]LogTexture:Display: Building textures: HQ_Lightmap1_245 (AutoDXT)
+[2016.12.24-01.36.31:254][  0]LogTexture:Display: Building textures: HQ_Lightmap1_246 (AutoDXT)
+[2016.12.24-01.36.31:279][  0]LogTexture:Display: Building textures: HQ_Lightmap1_247 (AutoDXT)
+[2016.12.24-01.36.31:319][  0]LogTexture:Display: Building textures: HQ_Lightmap1_248 (AutoDXT)
+[2016.12.24-01.36.31:344][  0]LogTexture:Display: Building textures: HQ_Lightmap1_249 (AutoDXT)
+[2016.12.24-01.36.31:386][  0]LogTexture:Display: Building textures: HQ_Lightmap1_25 (AutoDXT)
+[2016.12.24-01.36.31:420][  0]LogTexture:Display: Building textures: HQ_Lightmap1_250 (AutoDXT)
+[2016.12.24-01.36.31:445][  0]LogTexture:Display: Building textures: HQ_Lightmap1_251 (AutoDXT)
+[2016.12.24-01.36.31:484][  0]LogTexture:Display: Building textures: HQ_Lightmap1_252 (AutoDXT)
+[2016.12.24-01.36.31:520][  0]LogTexture:Display: Building textures: HQ_Lightmap1_253 (AutoDXT)
+[2016.12.24-01.36.31:554][  0]LogTexture:Display: Building textures: HQ_Lightmap1_254 (AutoDXT)
+[2016.12.24-01.36.31:590][  0]LogTexture:Display: Building textures: HQ_Lightmap1_255 (AutoDXT)
+[2016.12.24-01.36.31:621][  0]LogTexture:Display: Building textures: HQ_Lightmap1_256 (AutoDXT)
+[2016.12.24-01.36.31:654][  0]LogTexture:Display: Building textures: HQ_Lightmap1_257 (AutoDXT)
+[2016.12.24-01.36.31:684][  0]LogTexture:Display: Building textures: HQ_Lightmap1_258 (AutoDXT)
+[2016.12.24-01.36.31:717][  0]LogTexture:Display: Building textures: HQ_Lightmap1_259 (AutoDXT)
+[2016.12.24-01.36.31:745][  0]LogTexture:Display: Building textures: HQ_Lightmap1_26 (AutoDXT)
+[2016.12.24-01.36.31:779][  0]LogTexture:Display: Building textures: HQ_Lightmap1_260 (AutoDXT)
+[2016.12.24-01.36.31:815][  0]LogTexture:Display: Building textures: HQ_Lightmap1_261 (AutoDXT)
+[2016.12.24-01.36.31:858][  0]LogTexture:Display: Building textures: HQ_Lightmap1_262 (AutoDXT)
+[2016.12.24-01.36.31:890][  0]LogTexture:Display: Building textures: HQ_Lightmap1_263 (AutoDXT)
+[2016.12.24-01.36.31:916][  0]LogTexture:Display: Building textures: HQ_Lightmap1_264 (AutoDXT)
+[2016.12.24-01.36.31:955][  0]LogTexture:Display: Building textures: HQ_Lightmap1_265 (AutoDXT)
+[2016.12.24-01.36.31:985][  0]LogTexture:Display: Building textures: HQ_Lightmap1_266 (AutoDXT)
+[2016.12.24-01.36.32:022][  0]LogTexture:Display: Building textures: HQ_Lightmap1_267 (AutoDXT)
+[2016.12.24-01.36.32:047][  0]LogTexture:Display: Building textures: HQ_Lightmap1_268 (AutoDXT)
+[2016.12.24-01.36.32:076][  0]LogTexture:Display: Building textures: HQ_Lightmap1_269 (AutoDXT)
+[2016.12.24-01.36.32:105][  0]LogTexture:Display: Building textures: HQ_Lightmap1_27 (AutoDXT)
+[2016.12.24-01.36.32:136][  0]LogTexture:Display: Building textures: HQ_Lightmap1_270 (AutoDXT)
+[2016.12.24-01.36.32:167][  0]LogTexture:Display: Building textures: HQ_Lightmap1_271 (AutoDXT)
+[2016.12.24-01.36.32:193][  0]LogTexture:Display: Building textures: HQ_Lightmap1_272 (AutoDXT)
+[2016.12.24-01.36.32:227][  0]LogTexture:Display: Building textures: HQ_Lightmap1_273 (AutoDXT)
+[2016.12.24-01.36.32:251][  0]LogTexture:Display: Building textures: HQ_Lightmap1_274 (AutoDXT)
+[2016.12.24-01.36.32:280][  0]LogTexture:Display: Building textures: HQ_Lightmap1_275 (AutoDXT)
+[2016.12.24-01.36.32:307][  0]LogTexture:Display: Building textures: HQ_Lightmap1_276 (AutoDXT)
+[2016.12.24-01.36.32:333][  0]LogTexture:Display: Building textures: HQ_Lightmap1_277 (AutoDXT)
+[2016.12.24-01.36.32:368][  0]LogTexture:Display: Building textures: HQ_Lightmap1_278 (AutoDXT)
+[2016.12.24-01.36.32:397][  0]LogTexture:Display: Building textures: HQ_Lightmap1_279 (AutoDXT)
+[2016.12.24-01.36.32:423][  0]LogTexture:Display: Building textures: HQ_Lightmap1_28 (AutoDXT)
+[2016.12.24-01.36.32:457][  0]LogTexture:Display: Building textures: HQ_Lightmap1_280 (AutoDXT)
+[2016.12.24-01.36.32:482][  0]LogTexture:Display: Building textures: HQ_Lightmap1_281 (AutoDXT)
+[2016.12.24-01.36.32:518][  0]LogTexture:Display: Building textures: HQ_Lightmap1_282 (AutoDXT)
+[2016.12.24-01.36.32:547][  0]LogTexture:Display: Building textures: HQ_Lightmap1_283 (AutoDXT)
+[2016.12.24-01.36.32:571][  0]LogTexture:Display: Building textures: HQ_Lightmap1_284 (AutoDXT)
+[2016.12.24-01.36.32:611][  0]LogTexture:Display: Building textures: HQ_Lightmap1_285 (AutoDXT)
+[2016.12.24-01.36.32:636][  0]LogTexture:Display: Building textures: HQ_Lightmap1_286 (AutoDXT)
+[2016.12.24-01.36.32:668][  0]LogTexture:Display: Building textures: HQ_Lightmap1_287 (AutoDXT)
+[2016.12.24-01.36.32:695][  0]LogTexture:Display: Building textures: HQ_Lightmap1_288 (AutoDXT)
+[2016.12.24-01.36.32:723][  0]LogTexture:Display: Building textures: HQ_Lightmap1_289 (AutoDXT)
+[2016.12.24-01.36.32:754][  0]LogTexture:Display: Building textures: HQ_Lightmap1_29 (AutoDXT)
+[2016.12.24-01.36.32:781][  0]LogTexture:Display: Building textures: HQ_Lightmap1_290 (AutoDXT)
+[2016.12.24-01.36.32:817][  0]LogTexture:Display: Building textures: HQ_Lightmap1_291 (AutoDXT)
+[2016.12.24-01.36.32:849][  0]LogTexture:Display: Building textures: HQ_Lightmap1_292 (AutoDXT)
+[2016.12.24-01.36.32:874][  0]LogTexture:Display: Building textures: HQ_Lightmap1_293 (AutoDXT)
+[2016.12.24-01.36.32:904][  0]LogTexture:Display: Building textures: HQ_Lightmap1_294 (AutoDXT)
+[2016.12.24-01.36.32:931][  0]LogTexture:Display: Building textures: HQ_Lightmap1_295 (AutoDXT)
+[2016.12.24-01.36.32:981][  0]LogTexture:Display: Building textures: HQ_Lightmap1_296 (AutoDXT)
+[2016.12.24-01.36.33:042][  0]LogTexture:Display: Building textures: HQ_Lightmap1_297 (AutoDXT)
+[2016.12.24-01.36.33:071][  0]LogTexture:Display: Building textures: HQ_Lightmap1_298 (AutoDXT)
+[2016.12.24-01.36.33:145][  0]LogTexture:Display: Building textures: HQ_Lightmap1_299 (AutoDXT)
+[2016.12.24-01.36.33:188][  0]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2016.12.24-01.36.33:215][  0]LogTexture:Display: Building textures: HQ_Lightmap1_30 (AutoDXT)
+[2016.12.24-01.36.33:239][  0]LogTexture:Display: Building textures: HQ_Lightmap1_300 (AutoDXT)
+[2016.12.24-01.36.33:275][  0]LogTexture:Display: Building textures: HQ_Lightmap1_301 (AutoDXT)
+[2016.12.24-01.36.33:302][  0]LogTexture:Display: Building textures: HQ_Lightmap1_302 (AutoDXT)
+[2016.12.24-01.36.33:338][  0]LogTexture:Display: Building textures: HQ_Lightmap1_303 (AutoDXT)
+[2016.12.24-01.36.33:391][  0]LogTexture:Display: Building textures: HQ_Lightmap1_304 (AutoDXT)
+[2016.12.24-01.36.33:415][  0]LogTexture:Display: Building textures: HQ_Lightmap1_305 (AutoDXT)
+[2016.12.24-01.36.33:449][  0]LogTexture:Display: Building textures: HQ_Lightmap1_306 (AutoDXT)
+[2016.12.24-01.36.33:490][  0]LogTexture:Display: Building textures: HQ_Lightmap1_307 (AutoDXT)
+[2016.12.24-01.36.33:516][  0]LogTexture:Display: Building textures: HQ_Lightmap1_308 (AutoDXT)
+[2016.12.24-01.36.33:568][  0]LogTexture:Display: Building textures: HQ_Lightmap1_309 (AutoDXT)
+[2016.12.24-01.36.33:606][  0]LogTexture:Display: Building textures: HQ_Lightmap1_31 (AutoDXT)
+[2016.12.24-01.36.33:670][  0]LogTexture:Display: Building textures: HQ_Lightmap1_310 (AutoDXT)
+[2016.12.24-01.36.33:695][  0]LogTexture:Display: Building textures: HQ_Lightmap1_311 (AutoDXT)
+[2016.12.24-01.36.33:734][  0]LogTexture:Display: Building textures: HQ_Lightmap1_312 (AutoDXT)
+[2016.12.24-01.36.33:760][  0]LogTexture:Display: Building textures: HQ_Lightmap1_313 (AutoDXT)
+[2016.12.24-01.36.33:784][  0]LogTexture:Display: Building textures: HQ_Lightmap1_314 (AutoDXT)
+[2016.12.24-01.36.33:812][  0]LogTexture:Display: Building textures: HQ_Lightmap1_315 (AutoDXT)
+[2016.12.24-01.36.33:837][  0]LogTexture:Display: Building textures: HQ_Lightmap1_316 (AutoDXT)
+[2016.12.24-01.36.33:866][  0]LogTexture:Display: Building textures: HQ_Lightmap1_317 (AutoDXT)
+[2016.12.24-01.36.33:993][  0]LogTexture:Display: Building textures: HQ_Lightmap1_318 (AutoDXT)
+[2016.12.24-01.36.34:093][  0]LogTexture:Display: Building textures: HQ_Lightmap1_319 (AutoDXT)
+[2016.12.24-01.36.34:123][  0]LogTexture:Display: Building textures: HQ_Lightmap1_32 (AutoDXT)
+[2016.12.24-01.36.34:162][  0]LogTexture:Display: Building textures: HQ_Lightmap1_320 (AutoDXT)
+[2016.12.24-01.36.34:190][  0]LogTexture:Display: Building textures: HQ_Lightmap1_321 (AutoDXT)
+[2016.12.24-01.36.34:228][  0]LogTexture:Display: Building textures: HQ_Lightmap1_322 (AutoDXT)
+[2016.12.24-01.36.34:256][  0]LogTexture:Display: Building textures: HQ_Lightmap1_323 (AutoDXT)
+[2016.12.24-01.36.34:293][  0]LogTexture:Display: Building textures: HQ_Lightmap1_324 (AutoDXT)
+[2016.12.24-01.36.34:322][  0]LogTexture:Display: Building textures: HQ_Lightmap1_325 (AutoDXT)
+[2016.12.24-01.36.34:349][  0]LogTexture:Display: Building textures: HQ_Lightmap1_326 (AutoDXT)
+[2016.12.24-01.36.34:376][  0]LogTexture:Display: Building textures: HQ_Lightmap1_327 (AutoDXT)
+[2016.12.24-01.36.34:411][  0]LogTexture:Display: Building textures: HQ_Lightmap1_328 (AutoDXT)
+[2016.12.24-01.36.34:438][  0]LogTexture:Display: Building textures: HQ_Lightmap1_329 (AutoDXT)
+[2016.12.24-01.36.34:486][  0]LogTexture:Display: Building textures: HQ_Lightmap1_33 (AutoDXT)
+[2016.12.24-01.36.34:526][  0]LogTexture:Display: Building textures: HQ_Lightmap1_330 (AutoDXT)
+[2016.12.24-01.36.34:551][  0]LogTexture:Display: Building textures: HQ_Lightmap1_331 (AutoDXT)
+[2016.12.24-01.36.34:600][  0]LogTexture:Display: Building textures: HQ_Lightmap1_332 (AutoDXT)
+[2016.12.24-01.36.34:630][  0]LogTexture:Display: Building textures: HQ_Lightmap1_333 (AutoDXT)
+[2016.12.24-01.36.34:663][  0]LogTexture:Display: Building textures: HQ_Lightmap1_334 (AutoDXT)
+[2016.12.24-01.36.34:692][  0]LogTexture:Display: Building textures: HQ_Lightmap1_335 (AutoDXT)
+[2016.12.24-01.36.34:705][  0]LogTexture:Display: Building textures: HQ_Lightmap1_336 (AutoDXT)
+[2016.12.24-01.36.34:743][  0]LogTexture:Display: Building textures: HQ_Lightmap1_337 (AutoDXT)
+[2016.12.24-01.36.34:775][  0]LogTexture:Display: Building textures: HQ_Lightmap1_338 (AutoDXT)
+[2016.12.24-01.36.34:800][  0]LogTexture:Display: Building textures: HQ_Lightmap1_339 (AutoDXT)
+[2016.12.24-01.36.34:863][  0]LogTexture:Display: Building textures: HQ_Lightmap1_34 (AutoDXT)
+[2016.12.24-01.36.34:891][  0]LogTexture:Display: Building textures: HQ_Lightmap1_35 (AutoDXT)
+[2016.12.24-01.36.34:920][  0]LogTexture:Display: Building textures: HQ_Lightmap1_36 (AutoDXT)
+[2016.12.24-01.36.34:955][  0]LogTexture:Display: Building textures: HQ_Lightmap1_37 (AutoDXT)
+[2016.12.24-01.36.35:009][  0]LogTexture:Display: Building textures: HQ_Lightmap1_38 (AutoDXT)
+[2016.12.24-01.36.35:035][  0]LogTexture:Display: Building textures: HQ_Lightmap1_39 (AutoDXT)
+[2016.12.24-01.36.35:072][  0]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2016.12.24-01.36.35:097][  0]LogTexture:Display: Building textures: HQ_Lightmap1_40 (AutoDXT)
+[2016.12.24-01.36.35:122][  0]LogTexture:Display: Building textures: HQ_Lightmap1_41 (AutoDXT)
+[2016.12.24-01.36.35:166][  0]LogTexture:Display: Building textures: HQ_Lightmap1_42 (AutoDXT)
+[2016.12.24-01.36.35:247][  0]LogTexture:Display: Building textures: HQ_Lightmap1_43 (AutoDXT)
+[2016.12.24-01.36.35:277][  0]LogTexture:Display: Building textures: HQ_Lightmap1_44 (AutoDXT)
+[2016.12.24-01.36.35:310][  0]LogTexture:Display: Building textures: HQ_Lightmap1_45 (AutoDXT)
+[2016.12.24-01.36.35:336][  0]LogTexture:Display: Building textures: HQ_Lightmap1_46 (AutoDXT)
+[2016.12.24-01.36.35:363][  0]LogTexture:Display: Building textures: HQ_Lightmap1_47 (AutoDXT)
+[2016.12.24-01.36.35:388][  0]LogTexture:Display: Building textures: HQ_Lightmap1_48 (AutoDXT)
+[2016.12.24-01.36.35:413][  0]LogTexture:Display: Building textures: HQ_Lightmap1_49 (AutoDXT)
+[2016.12.24-01.36.35:439][  0]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2016.12.24-01.36.35:465][  0]LogTexture:Display: Building textures: HQ_Lightmap1_50 (AutoDXT)
+[2016.12.24-01.36.35:496][  0]LogTexture:Display: Building textures: HQ_Lightmap1_51 (AutoDXT)
+[2016.12.24-01.36.35:534][  0]LogTexture:Display: Building textures: HQ_Lightmap1_52 (AutoDXT)
+[2016.12.24-01.36.35:561][  0]LogTexture:Display: Building textures: HQ_Lightmap1_53 (AutoDXT)
+[2016.12.24-01.36.35:590][  0]LogTexture:Display: Building textures: HQ_Lightmap1_54 (AutoDXT)
+[2016.12.24-01.36.35:617][  0]LogTexture:Display: Building textures: HQ_Lightmap1_55 (AutoDXT)
+[2016.12.24-01.36.35:646][  0]LogTexture:Display: Building textures: HQ_Lightmap1_56 (AutoDXT)
+[2016.12.24-01.36.35:671][  0]LogTexture:Display: Building textures: HQ_Lightmap1_57 (AutoDXT)
+[2016.12.24-01.36.35:696][  0]LogTexture:Display: Building textures: HQ_Lightmap1_58 (AutoDXT)
+[2016.12.24-01.36.35:721][  0]LogTexture:Display: Building textures: HQ_Lightmap1_59 (AutoDXT)
+[2016.12.24-01.36.35:749][  0]LogTexture:Display: Building textures: HQ_Lightmap1_6 (AutoDXT)
+[2016.12.24-01.36.35:781][  0]LogTexture:Display: Building textures: HQ_Lightmap1_60 (AutoDXT)
+[2016.12.24-01.36.35:808][  0]LogTexture:Display: Building textures: HQ_Lightmap1_61 (AutoDXT)
+[2016.12.24-01.36.35:833][  0]LogTexture:Display: Building textures: HQ_Lightmap1_62 (AutoDXT)
+[2016.12.24-01.36.35:859][  0]LogTexture:Display: Building textures: HQ_Lightmap1_63 (AutoDXT)
+[2016.12.24-01.36.35:889][  0]LogTexture:Display: Building textures: HQ_Lightmap1_64 (AutoDXT)
+[2016.12.24-01.36.35:918][  0]LogTexture:Display: Building textures: HQ_Lightmap1_65 (AutoDXT)
+[2016.12.24-01.36.35:946][  0]LogTexture:Display: Building textures: HQ_Lightmap1_66 (AutoDXT)
+[2016.12.24-01.36.35:971][  0]LogTexture:Display: Building textures: HQ_Lightmap1_67 (AutoDXT)
+[2016.12.24-01.36.36:007][  0]LogTexture:Display: Building textures: HQ_Lightmap1_68 (AutoDXT)
+[2016.12.24-01.36.36:035][  0]LogTexture:Display: Building textures: HQ_Lightmap1_69 (AutoDXT)
+[2016.12.24-01.36.36:061][  0]LogTexture:Display: Building textures: HQ_Lightmap1_7 (AutoDXT)
+[2016.12.24-01.36.36:088][  0]LogTexture:Display: Building textures: HQ_Lightmap1_70 (AutoDXT)
+[2016.12.24-01.36.36:116][  0]LogTexture:Display: Building textures: HQ_Lightmap1_71 (AutoDXT)
+[2016.12.24-01.36.36:142][  0]LogTexture:Display: Building textures: HQ_Lightmap1_72 (AutoDXT)
+[2016.12.24-01.36.36:167][  0]LogTexture:Display: Building textures: HQ_Lightmap1_73 (AutoDXT)
+[2016.12.24-01.36.36:193][  0]LogTexture:Display: Building textures: HQ_Lightmap1_74 (AutoDXT)
+[2016.12.24-01.36.36:221][  0]LogTexture:Display: Building textures: HQ_Lightmap1_75 (AutoDXT)
+[2016.12.24-01.36.36:252][  0]LogTexture:Display: Building textures: HQ_Lightmap1_76 (AutoDXT)
+[2016.12.24-01.36.36:281][  0]LogTexture:Display: Building textures: HQ_Lightmap1_77 (AutoDXT)
+[2016.12.24-01.36.36:307][  0]LogTexture:Display: Building textures: HQ_Lightmap1_78 (AutoDXT)
+[2016.12.24-01.36.36:334][  0]LogTexture:Display: Building textures: HQ_Lightmap1_79 (AutoDXT)
+[2016.12.24-01.36.36:360][  0]LogTexture:Display: Building textures: HQ_Lightmap1_8 (AutoDXT)
+[2016.12.24-01.36.36:389][  0]LogTexture:Display: Building textures: HQ_Lightmap1_80 (AutoDXT)
+[2016.12.24-01.36.36:416][  0]LogTexture:Display: Building textures: HQ_Lightmap1_81 (AutoDXT)
+[2016.12.24-01.36.36:441][  0]LogTexture:Display: Building textures: HQ_Lightmap1_82 (AutoDXT)
+[2016.12.24-01.36.36:466][  0]LogTexture:Display: Building textures: HQ_Lightmap1_83 (AutoDXT)
+[2016.12.24-01.36.36:497][  0]LogTexture:Display: Building textures: HQ_Lightmap1_84 (AutoDXT)
+[2016.12.24-01.36.36:525][  0]LogTexture:Display: Building textures: HQ_Lightmap1_85 (AutoDXT)
+[2016.12.24-01.36.36:554][  0]LogTexture:Display: Building textures: HQ_Lightmap1_86 (AutoDXT)
+[2016.12.24-01.36.36:584][  0]LogTexture:Display: Building textures: HQ_Lightmap1_87 (AutoDXT)
+[2016.12.24-01.36.36:625][  0]LogTexture:Display: Building textures: HQ_Lightmap1_88 (AutoDXT)
+[2016.12.24-01.36.36:660][  0]LogTexture:Display: Building textures: HQ_Lightmap1_89 (AutoDXT)
+[2016.12.24-01.36.36:691][  0]LogTexture:Display: Building textures: HQ_Lightmap1_9 (AutoDXT)
+[2016.12.24-01.36.36:725][  0]LogTexture:Display: Building textures: HQ_Lightmap1_90 (AutoDXT)
+[2016.12.24-01.36.36:755][  0]LogTexture:Display: Building textures: HQ_Lightmap1_91 (AutoDXT)
+[2016.12.24-01.36.36:789][  0]LogTexture:Display: Building textures: HQ_Lightmap1_92 (AutoDXT)
+[2016.12.24-01.36.36:824][  0]LogTexture:Display: Building textures: HQ_Lightmap1_93 (AutoDXT)
+[2016.12.24-01.36.36:854][  0]LogTexture:Display: Building textures: HQ_Lightmap1_94 (AutoDXT)
+[2016.12.24-01.36.36:885][  0]LogTexture:Display: Building textures: HQ_Lightmap1_95 (AutoDXT)
+[2016.12.24-01.36.36:915][  0]LogTexture:Display: Building textures: HQ_Lightmap1_96 (AutoDXT)
+[2016.12.24-01.36.36:942][  0]LogTexture:Display: Building textures: HQ_Lightmap1_97 (AutoDXT)
+[2016.12.24-01.36.36:969][  0]LogTexture:Display: Building textures: HQ_Lightmap1_98 (AutoDXT)
+[2016.12.24-01.36.37:001][  0]LogTexture:Display: Building textures: HQ_Lightmap1_99 (AutoDXT)
+[2016.12.24-01.36.37:026][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.12.24-01.36.37:052][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_10 (DXT1)
+[2016.12.24-01.36.37:070][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_100 (DXT1)
+[2016.12.24-01.36.37:088][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_101 (DXT1)
+[2016.12.24-01.36.37:107][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_102 (DXT1)
+[2016.12.24-01.36.37:127][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_103 (DXT1)
+[2016.12.24-01.36.37:147][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_104 (DXT1)
+[2016.12.24-01.36.37:164][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_105 (DXT1)
+[2016.12.24-01.36.37:183][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_106 (DXT1)
+[2016.12.24-01.36.37:204][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_107 (DXT1)
+[2016.12.24-01.36.37:224][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_108 (DXT1)
+[2016.12.24-01.36.37:245][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_109 (DXT1)
+[2016.12.24-01.36.37:271][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_11 (DXT1)
+[2016.12.24-01.36.37:294][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_110 (DXT1)
+[2016.12.24-01.36.37:313][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_111 (DXT1)
+[2016.12.24-01.36.37:332][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_112 (DXT1)
+[2016.12.24-01.36.37:349][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_113 (DXT1)
+[2016.12.24-01.36.37:369][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_114 (DXT1)
+[2016.12.24-01.36.37:390][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_115 (DXT1)
+[2016.12.24-01.36.37:410][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_116 (DXT1)
+[2016.12.24-01.36.37:427][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_117 (DXT1)
+[2016.12.24-01.36.37:447][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_118 (DXT1)
+[2016.12.24-01.36.37:464][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_119 (DXT1)
+[2016.12.24-01.36.37:482][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_12 (DXT1)
+[2016.12.24-01.36.37:502][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_120 (DXT1)
+[2016.12.24-01.36.37:521][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_121 (DXT1)
+[2016.12.24-01.36.37:540][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_122 (DXT1)
+[2016.12.24-01.36.37:564][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_123 (DXT1)
+[2016.12.24-01.36.37:584][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_124 (DXT1)
+[2016.12.24-01.36.37:603][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_125 (DXT1)
+[2016.12.24-01.36.37:621][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_126 (DXT1)
+[2016.12.24-01.36.37:641][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_127 (DXT1)
+[2016.12.24-01.36.37:658][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_128 (DXT1)
+[2016.12.24-01.36.37:677][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_129 (DXT1)
+[2016.12.24-01.36.37:694][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_13 (DXT1)
+[2016.12.24-01.36.37:713][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_130 (DXT1)
+[2016.12.24-01.36.37:734][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_131 (DXT1)
+[2016.12.24-01.36.37:755][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_132 (DXT1)
+[2016.12.24-01.36.37:774][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_133 (DXT1)
+[2016.12.24-01.36.37:792][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_134 (DXT1)
+[2016.12.24-01.36.37:809][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_135 (DXT1)
+[2016.12.24-01.36.37:827][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_136 (DXT1)
+[2016.12.24-01.36.37:844][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_137 (DXT1)
+[2016.12.24-01.36.37:861][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_138 (DXT1)
+[2016.12.24-01.36.37:882][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_139 (DXT1)
+[2016.12.24-01.36.37:900][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_14 (DXT1)
+[2016.12.24-01.36.37:916][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_140 (DXT1)
+[2016.12.24-01.36.37:933][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_141 (DXT1)
+[2016.12.24-01.36.37:951][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_142 (DXT1)
+[2016.12.24-01.36.37:969][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_143 (DXT1)
+[2016.12.24-01.36.37:987][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_144 (DXT1)
+[2016.12.24-01.36.38:006][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_145 (DXT1)
+[2016.12.24-01.36.38:023][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_146 (DXT1)
+[2016.12.24-01.36.38:040][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_147 (DXT1)
+[2016.12.24-01.36.38:062][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_148 (DXT1)
+[2016.12.24-01.36.38:078][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_149 (DXT1)
+[2016.12.24-01.36.38:094][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_15 (DXT1)
+[2016.12.24-01.36.38:112][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_150 (DXT1)
+[2016.12.24-01.36.38:128][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_151 (DXT1)
+[2016.12.24-01.36.38:145][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_152 (DXT1)
+[2016.12.24-01.36.38:161][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_153 (DXT1)
+[2016.12.24-01.36.38:178][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_154 (DXT1)
+[2016.12.24-01.36.38:195][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_155 (DXT1)
+[2016.12.24-01.36.38:212][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_156 (DXT1)
+[2016.12.24-01.36.38:230][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_157 (DXT1)
+[2016.12.24-01.36.38:253][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_158 (DXT1)
+[2016.12.24-01.36.38:269][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_159 (DXT1)
+[2016.12.24-01.36.38:285][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_16 (DXT1)
+[2016.12.24-01.36.38:302][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_160 (DXT1)
+[2016.12.24-01.36.38:321][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_161 (DXT1)
+[2016.12.24-01.36.38:337][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_162 (DXT1)
+[2016.12.24-01.36.38:358][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_163 (DXT1)
+[2016.12.24-01.36.38:374][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_164 (DXT1)
+[2016.12.24-01.36.38:391][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_165 (DXT1)
+[2016.12.24-01.36.38:408][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_166 (DXT1)
+[2016.12.24-01.36.38:425][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_167 (DXT1)
+[2016.12.24-01.36.38:443][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_168 (DXT1)
+[2016.12.24-01.36.38:461][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_169 (DXT1)
+[2016.12.24-01.36.38:477][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_17 (DXT1)
+[2016.12.24-01.36.38:495][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_170 (DXT1)
+[2016.12.24-01.36.38:514][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_171 (DXT1)
+[2016.12.24-01.36.38:532][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_172 (DXT1)
+[2016.12.24-01.36.38:548][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_173 (DXT1)
+[2016.12.24-01.36.38:574][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_174 (DXT1)
+[2016.12.24-01.36.38:591][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_175 (DXT1)
+[2016.12.24-01.36.38:609][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_176 (DXT1)
+[2016.12.24-01.36.38:625][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_177 (DXT1)
+[2016.12.24-01.36.38:641][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_178 (DXT1)
+[2016.12.24-01.36.38:658][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_179 (DXT1)
+[2016.12.24-01.36.38:674][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_18 (DXT1)
+[2016.12.24-01.36.38:690][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_180 (DXT1)
+[2016.12.24-01.36.38:707][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_181 (DXT1)
+[2016.12.24-01.36.38:723][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_182 (DXT1)
+[2016.12.24-01.36.38:740][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_183 (DXT1)
+[2016.12.24-01.36.38:757][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_184 (DXT1)
+[2016.12.24-01.36.38:774][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_185 (DXT1)
+[2016.12.24-01.36.38:795][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_186 (DXT1)
+[2016.12.24-01.36.38:816][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_187 (DXT1)
+[2016.12.24-01.36.38:832][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_188 (DXT1)
+[2016.12.24-01.36.38:849][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_189 (DXT1)
+[2016.12.24-01.36.38:866][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_19 (DXT1)
+[2016.12.24-01.36.38:882][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_190 (DXT1)
+[2016.12.24-01.36.38:898][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_191 (DXT1)
+[2016.12.24-01.36.38:914][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_192 (DXT1)
+[2016.12.24-01.36.38:931][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_193 (DXT1)
+[2016.12.24-01.36.38:947][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_194 (DXT1)
+[2016.12.24-01.36.38:969][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_195 (DXT1)
+[2016.12.24-01.36.38:985][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_196 (DXT1)
+[2016.12.24-01.36.39:001][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_197 (DXT1)
+[2016.12.24-01.36.39:017][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_198 (DXT1)
+[2016.12.24-01.36.39:033][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_199 (DXT1)
+[2016.12.24-01.36.39:051][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2016.12.24-01.36.39:068][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_20 (DXT1)
+[2016.12.24-01.36.39:085][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_200 (DXT1)
+[2016.12.24-01.36.39:101][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_201 (DXT1)
+[2016.12.24-01.36.39:117][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_202 (DXT1)
+[2016.12.24-01.36.39:134][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_203 (DXT1)
+[2016.12.24-01.36.39:151][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_204 (DXT1)
+[2016.12.24-01.36.39:168][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_205 (DXT1)
+[2016.12.24-01.36.39:185][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_206 (DXT1)
+[2016.12.24-01.36.39:201][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_207 (DXT1)
+[2016.12.24-01.36.39:222][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_208 (DXT1)
+[2016.12.24-01.36.39:239][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_209 (DXT1)
+[2016.12.24-01.36.39:255][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_21 (DXT1)
+[2016.12.24-01.36.39:273][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_210 (DXT1)
+[2016.12.24-01.36.39:290][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_211 (DXT1)
+[2016.12.24-01.36.39:306][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_212 (DXT1)
+[2016.12.24-01.36.39:327][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_213 (DXT1)
+[2016.12.24-01.36.39:343][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_214 (DXT1)
+[2016.12.24-01.36.39:359][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_215 (DXT1)
+[2016.12.24-01.36.39:376][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_216 (DXT1)
+[2016.12.24-01.36.39:393][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_217 (DXT1)
+[2016.12.24-01.36.39:410][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_218 (DXT1)
+[2016.12.24-01.36.39:434][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_219 (DXT1)
+[2016.12.24-01.36.39:466][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_22 (DXT1)
+[2016.12.24-01.36.39:484][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_220 (DXT1)
+[2016.12.24-01.36.39:500][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_221 (DXT1)
+[2016.12.24-01.36.39:519][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_222 (DXT1)
+[2016.12.24-01.36.39:535][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_223 (DXT1)
+[2016.12.24-01.36.39:553][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_224 (DXT1)
+[2016.12.24-01.36.39:573][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_225 (DXT1)
+[2016.12.24-01.36.39:593][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_226 (DXT1)
+[2016.12.24-01.36.39:609][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_227 (DXT1)
+[2016.12.24-01.36.39:625][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_228 (DXT1)
+[2016.12.24-01.36.39:642][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_229 (DXT1)
+[2016.12.24-01.36.39:659][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_23 (DXT1)
+[2016.12.24-01.36.39:676][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_230 (DXT1)
+[2016.12.24-01.36.39:696][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_231 (DXT1)
+[2016.12.24-01.36.39:722][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_232 (DXT1)
+[2016.12.24-01.36.39:739][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_233 (DXT1)
+[2016.12.24-01.36.39:755][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_234 (DXT1)
+[2016.12.24-01.36.39:772][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_235 (DXT1)
+[2016.12.24-01.36.39:788][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_236 (DXT1)
+[2016.12.24-01.36.39:805][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_237 (DXT1)
+[2016.12.24-01.36.39:823][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_238 (DXT1)
+[2016.12.24-01.36.39:842][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_239 (DXT1)
+[2016.12.24-01.36.39:858][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_24 (DXT1)
+[2016.12.24-01.36.39:875][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_240 (DXT1)
+[2016.12.24-01.36.39:892][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_241 (DXT1)
+[2016.12.24-01.36.39:908][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_242 (DXT1)
+[2016.12.24-01.36.39:924][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_243 (DXT1)
+[2016.12.24-01.36.39:940][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_244 (DXT1)
+[2016.12.24-01.36.39:956][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_245 (DXT1)
+[2016.12.24-01.36.39:973][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_246 (DXT1)
+[2016.12.24-01.36.39:989][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_247 (DXT1)
+[2016.12.24-01.36.40:009][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_248 (DXT1)
+[2016.12.24-01.36.40:025][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_249 (DXT1)
+[2016.12.24-01.36.40:042][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_25 (DXT1)
+[2016.12.24-01.36.40:059][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_250 (DXT1)
+[2016.12.24-01.36.40:076][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_251 (DXT1)
+[2016.12.24-01.36.40:095][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_252 (DXT1)
+[2016.12.24-01.36.40:112][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_253 (DXT1)
+[2016.12.24-01.36.40:128][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_254 (DXT1)
+[2016.12.24-01.36.40:149][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_255 (DXT1)
+[2016.12.24-01.36.40:166][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_256 (DXT1)
+[2016.12.24-01.36.40:182][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_257 (DXT1)
+[2016.12.24-01.36.40:199][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_258 (DXT1)
+[2016.12.24-01.36.40:215][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_259 (DXT1)
+[2016.12.24-01.36.40:232][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_26 (DXT1)
+[2016.12.24-01.36.40:248][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_260 (DXT1)
+[2016.12.24-01.36.40:265][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_261 (DXT1)
+[2016.12.24-01.36.40:281][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_262 (DXT1)
+[2016.12.24-01.36.40:298][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_263 (DXT1)
+[2016.12.24-01.36.40:314][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_264 (DXT1)
+[2016.12.24-01.36.40:334][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_265 (DXT1)
+[2016.12.24-01.36.40:351][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_266 (DXT1)
+[2016.12.24-01.36.40:367][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_267 (DXT1)
+[2016.12.24-01.36.40:383][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_268 (DXT1)
+[2016.12.24-01.36.40:400][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_269 (DXT1)
+[2016.12.24-01.36.40:417][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_27 (DXT1)
+[2016.12.24-01.36.40:434][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_270 (DXT1)
+[2016.12.24-01.36.40:453][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_271 (DXT1)
+[2016.12.24-01.36.40:470][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_272 (DXT1)
+[2016.12.24-01.36.40:486][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_273 (DXT1)
+[2016.12.24-01.36.40:503][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_274 (DXT1)
+[2016.12.24-01.36.40:524][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_275 (DXT1)
+[2016.12.24-01.36.40:542][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_276 (DXT1)
+[2016.12.24-01.36.40:559][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_277 (DXT1)
+[2016.12.24-01.36.40:580][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_278 (DXT1)
+[2016.12.24-01.36.40:601][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_279 (DXT1)
+[2016.12.24-01.36.40:620][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_28 (DXT1)
+[2016.12.24-01.36.40:636][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_280 (DXT1)
+[2016.12.24-01.36.40:652][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_281 (DXT1)
+[2016.12.24-01.36.40:669][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_282 (DXT1)
+[2016.12.24-01.36.40:686][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_283 (DXT1)
+[2016.12.24-01.36.40:705][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_284 (DXT1)
+[2016.12.24-01.36.40:721][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_285 (DXT1)
+[2016.12.24-01.36.40:737][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_286 (DXT1)
+[2016.12.24-01.36.40:754][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_287 (DXT1)
+[2016.12.24-01.36.40:770][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_288 (DXT1)
+[2016.12.24-01.36.40:787][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_289 (DXT1)
+[2016.12.24-01.36.40:804][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_29 (DXT1)
+[2016.12.24-01.36.40:820][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_290 (DXT1)
+[2016.12.24-01.36.40:836][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_291 (DXT1)
+[2016.12.24-01.36.40:855][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_292 (DXT1)
+[2016.12.24-01.36.40:871][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_293 (DXT1)
+[2016.12.24-01.36.40:887][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_294 (DXT1)
+[2016.12.24-01.36.40:905][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_295 (DXT1)
+[2016.12.24-01.36.40:922][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_296 (DXT1)
+[2016.12.24-01.36.40:939][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_297 (DXT1)
+[2016.12.24-01.36.40:955][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_298 (DXT1)
+[2016.12.24-01.36.40:971][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_299 (DXT1)
+[2016.12.24-01.36.40:988][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (DXT1)
+[2016.12.24-01.36.41:004][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_30 (DXT1)
+[2016.12.24-01.36.41:021][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_300 (DXT1)
+[2016.12.24-01.36.41:042][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_301 (DXT1)
+[2016.12.24-01.36.41:059][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_302 (DXT1)
+[2016.12.24-01.36.41:076][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_303 (DXT1)
+[2016.12.24-01.36.41:092][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_304 (DXT1)
+[2016.12.24-01.36.41:109][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_305 (DXT1)
+[2016.12.24-01.36.41:125][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_306 (DXT1)
+[2016.12.24-01.36.41:141][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_307 (DXT1)
+[2016.12.24-01.36.41:157][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_308 (DXT1)
+[2016.12.24-01.36.41:174][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_309 (DXT1)
+[2016.12.24-01.36.41:191][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_31 (DXT1)
+[2016.12.24-01.36.41:208][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_310 (DXT1)
+[2016.12.24-01.36.41:228][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_311 (DXT1)
+[2016.12.24-01.36.41:244][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_312 (DXT1)
+[2016.12.24-01.36.41:260][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_313 (DXT1)
+[2016.12.24-01.36.41:277][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_314 (DXT1)
+[2016.12.24-01.36.41:294][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_315 (DXT1)
+[2016.12.24-01.36.41:310][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_316 (DXT1)
+[2016.12.24-01.36.41:325][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_317 (DXT1)
+[2016.12.24-01.36.41:345][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_318 (DXT1)
+[2016.12.24-01.36.41:363][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_319 (DXT1)
+[2016.12.24-01.36.41:380][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_32 (DXT1)
+[2016.12.24-01.36.41:396][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_320 (DXT1)
+[2016.12.24-01.36.41:413][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_321 (DXT1)
+[2016.12.24-01.36.41:429][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_322 (DXT1)
+[2016.12.24-01.36.41:446][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_323 (DXT1)
+[2016.12.24-01.36.41:469][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_324 (DXT1)
+[2016.12.24-01.36.41:485][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_325 (DXT1)
+[2016.12.24-01.36.41:502][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_326 (DXT1)
+[2016.12.24-01.36.41:524][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_327 (DXT1)
+[2016.12.24-01.36.41:541][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_328 (DXT1)
+[2016.12.24-01.36.41:557][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_329 (DXT1)
+[2016.12.24-01.36.41:574][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_33 (DXT1)
+[2016.12.24-01.36.41:595][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_330 (DXT1)
+[2016.12.24-01.36.41:611][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_331 (DXT1)
+[2016.12.24-01.36.41:628][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_332 (DXT1)
+[2016.12.24-01.36.41:645][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_333 (DXT1)
+[2016.12.24-01.36.41:661][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_334 (DXT1)
+[2016.12.24-01.36.41:678][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_335 (DXT1)
+[2016.12.24-01.36.41:686][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_336 (DXT1)
+[2016.12.24-01.36.41:703][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_337 (DXT1)
+[2016.12.24-01.36.41:719][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_338 (DXT1)
+[2016.12.24-01.36.41:736][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_339 (DXT1)
+[2016.12.24-01.36.41:755][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_34 (DXT1)
+[2016.12.24-01.36.41:772][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_35 (DXT1)
+[2016.12.24-01.36.41:788][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_36 (DXT1)
+[2016.12.24-01.36.41:806][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_37 (DXT1)
+[2016.12.24-01.36.41:823][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_38 (DXT1)
+[2016.12.24-01.36.41:842][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_39 (DXT1)
+[2016.12.24-01.36.41:860][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (DXT1)
+[2016.12.24-01.36.41:877][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_40 (DXT1)
+[2016.12.24-01.36.41:893][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_41 (DXT1)
+[2016.12.24-01.36.41:910][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_42 (DXT1)
+[2016.12.24-01.36.41:927][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_43 (DXT1)
+[2016.12.24-01.36.41:943][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_44 (DXT1)
+[2016.12.24-01.36.41:964][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_45 (DXT1)
+[2016.12.24-01.36.41:981][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_46 (DXT1)
+[2016.12.24-01.36.41:997][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_47 (DXT1)
+[2016.12.24-01.36.42:014][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_48 (DXT1)
+[2016.12.24-01.36.42:031][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_49 (DXT1)
+[2016.12.24-01.36.42:047][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (DXT1)
+[2016.12.24-01.36.42:063][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_50 (DXT1)
+[2016.12.24-01.36.42:080][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_51 (DXT1)
+[2016.12.24-01.36.42:098][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_52 (DXT1)
+[2016.12.24-01.36.42:115][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_53 (DXT1)
+[2016.12.24-01.36.42:132][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_54 (DXT1)
+[2016.12.24-01.36.42:148][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_55 (DXT1)
+[2016.12.24-01.36.42:164][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_56 (DXT1)
+[2016.12.24-01.36.42:181][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_57 (DXT1)
+[2016.12.24-01.36.42:197][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_58 (DXT1)
+[2016.12.24-01.36.42:213][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_59 (DXT1)
+[2016.12.24-01.36.42:230][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_6 (DXT1)
+[2016.12.24-01.36.42:246][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_60 (DXT1)
+[2016.12.24-01.36.42:263][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_61 (DXT1)
+[2016.12.24-01.36.42:279][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_62 (DXT1)
+[2016.12.24-01.36.42:296][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_63 (DXT1)
+[2016.12.24-01.36.42:312][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_64 (DXT1)
+[2016.12.24-01.36.42:329][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_65 (DXT1)
+[2016.12.24-01.36.42:346][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_66 (DXT1)
+[2016.12.24-01.36.42:366][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_67 (DXT1)
+[2016.12.24-01.36.42:387][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_68 (DXT1)
+[2016.12.24-01.36.42:405][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_69 (DXT1)
+[2016.12.24-01.36.42:421][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_7 (DXT1)
+[2016.12.24-01.36.42:437][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_70 (DXT1)
+[2016.12.24-01.36.42:455][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_71 (DXT1)
+[2016.12.24-01.36.42:471][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_72 (DXT1)
+[2016.12.24-01.36.42:489][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_73 (DXT1)
+[2016.12.24-01.36.42:505][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_74 (DXT1)
+[2016.12.24-01.36.42:527][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_75 (DXT1)
+[2016.12.24-01.36.42:545][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_76 (DXT1)
+[2016.12.24-01.36.42:561][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_77 (DXT1)
+[2016.12.24-01.36.42:580][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_78 (DXT1)
+[2016.12.24-01.36.42:596][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_79 (DXT1)
+[2016.12.24-01.36.42:617][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_8 (DXT1)
+[2016.12.24-01.36.42:633][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_80 (DXT1)
+[2016.12.24-01.36.42:650][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_81 (DXT1)
+[2016.12.24-01.36.42:666][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_82 (DXT1)
+[2016.12.24-01.36.42:683][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_83 (DXT1)
+[2016.12.24-01.36.42:700][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_84 (DXT1)
+[2016.12.24-01.36.42:717][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_85 (DXT1)
+[2016.12.24-01.36.42:732][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_86 (DXT1)
+[2016.12.24-01.36.42:746][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_87 (DXT1)
+[2016.12.24-01.36.42:763][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_88 (DXT1)
+[2016.12.24-01.36.42:780][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_89 (DXT1)
+[2016.12.24-01.36.42:797][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_9 (DXT1)
+[2016.12.24-01.36.42:814][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_90 (DXT1)
+[2016.12.24-01.36.42:830][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_91 (DXT1)
+[2016.12.24-01.36.42:855][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_92 (DXT1)
+[2016.12.24-01.36.42:876][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_93 (DXT1)
+[2016.12.24-01.36.42:893][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_94 (DXT1)
+[2016.12.24-01.36.42:909][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_95 (DXT1)
+[2016.12.24-01.36.42:926][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_96 (DXT1)
+[2016.12.24-01.36.42:943][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_97 (DXT1)
+[2016.12.24-01.36.42:960][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_98 (DXT1)
+[2016.12.24-01.36.42:980][  0]LogTexture:Display: Building textures: LQ_Lightmap_1_99 (DXT1)
+[2016.12.24-01.36.42:996][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_340 (G8)
+[2016.12.24-01.36.42:997][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_341 (G8)
+[2016.12.24-01.36.42:998][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_342 (G8)
+[2016.12.24-01.36.43:000][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_343 (G8)
+[2016.12.24-01.36.43:001][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_344 (G8)
+[2016.12.24-01.36.43:002][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_345 (G8)
+[2016.12.24-01.36.43:004][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_346 (G8)
+[2016.12.24-01.36.43:005][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_347 (G8)
+[2016.12.24-01.36.43:006][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_348 (G8)
+[2016.12.24-01.36.43:008][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_349 (G8)
+[2016.12.24-01.36.43:009][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_350 (G8)
+[2016.12.24-01.36.43:010][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_351 (G8)
+[2016.12.24-01.36.43:012][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_352 (G8)
+[2016.12.24-01.36.43:013][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_353 (G8)
+[2016.12.24-01.36.43:014][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_354 (G8)
+[2016.12.24-01.36.43:016][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_355 (G8)
+[2016.12.24-01.36.43:017][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_356 (G8)
+[2016.12.24-01.36.43:018][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_357 (G8)
+[2016.12.24-01.36.43:020][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_358 (G8)
+[2016.12.24-01.36.43:021][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_359 (G8)
+[2016.12.24-01.36.43:022][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_360 (G8)
+[2016.12.24-01.36.43:024][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_361 (G8)
+[2016.12.24-01.36.43:025][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_362 (G8)
+[2016.12.24-01.36.43:026][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_363 (G8)
+[2016.12.24-01.36.43:028][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_364 (G8)
+[2016.12.24-01.36.43:029][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_365 (G8)
+[2016.12.24-01.36.43:031][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_366 (G8)
+[2016.12.24-01.36.43:032][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_367 (G8)
+[2016.12.24-01.36.43:033][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_368 (G8)
+[2016.12.24-01.36.43:035][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_369 (G8)
+[2016.12.24-01.36.43:036][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_370 (G8)
+[2016.12.24-01.36.43:037][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_371 (G8)
+[2016.12.24-01.36.43:039][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_372 (G8)
+[2016.12.24-01.36.43:040][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_373 (G8)
+[2016.12.24-01.36.43:042][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_374 (G8)
+[2016.12.24-01.36.43:043][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_375 (G8)
+[2016.12.24-01.36.43:045][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_376 (G8)
+[2016.12.24-01.36.43:046][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_377 (G8)
+[2016.12.24-01.36.43:047][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_378 (G8)
+[2016.12.24-01.36.43:049][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_379 (G8)
+[2016.12.24-01.36.43:050][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_380 (G8)
+[2016.12.24-01.36.43:052][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_381 (G8)
+[2016.12.24-01.36.43:053][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_382 (G8)
+[2016.12.24-01.36.43:054][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_383 (G8)
+[2016.12.24-01.36.43:056][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_384 (G8)
+[2016.12.24-01.36.43:057][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_385 (G8)
+[2016.12.24-01.36.43:058][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_386 (G8)
+[2016.12.24-01.36.43:060][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_387 (G8)
+[2016.12.24-01.36.43:061][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_388 (G8)
+[2016.12.24-01.36.43:063][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_389 (G8)
+[2016.12.24-01.36.43:064][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_390 (G8)
+[2016.12.24-01.36.43:065][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_391 (G8)
+[2016.12.24-01.36.43:066][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_392 (G8)
+[2016.12.24-01.36.43:068][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_393 (G8)
+[2016.12.24-01.36.43:070][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_394 (G8)
+[2016.12.24-01.36.43:071][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_395 (G8)
+[2016.12.24-01.36.43:072][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_396 (G8)
+[2016.12.24-01.36.43:073][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_397 (G8)
+[2016.12.24-01.36.43:075][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_398 (G8)
+[2016.12.24-01.36.43:076][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_399 (G8)
+[2016.12.24-01.36.43:077][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_400 (G8)
+[2016.12.24-01.36.43:078][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_401 (G8)
+[2016.12.24-01.36.43:080][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_402 (G8)
+[2016.12.24-01.36.43:081][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_403 (G8)
+[2016.12.24-01.36.43:083][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_404 (G8)
+[2016.12.24-01.36.43:084][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_405 (G8)
+[2016.12.24-01.36.43:085][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_406 (G8)
+[2016.12.24-01.36.43:087][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_407 (G8)
+[2016.12.24-01.36.43:088][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_408 (G8)
+[2016.12.24-01.36.43:090][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_409 (G8)
+[2016.12.24-01.36.43:091][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_410 (G8)
+[2016.12.24-01.36.43:092][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_411 (G8)
+[2016.12.24-01.36.43:094][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_412 (G8)
+[2016.12.24-01.36.43:095][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_413 (G8)
+[2016.12.24-01.36.43:096][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_414 (G8)
+[2016.12.24-01.36.43:097][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_415 (G8)
+[2016.12.24-01.36.43:101][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_416 (G8)
+[2016.12.24-01.36.43:103][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_417 (G8)
+[2016.12.24-01.36.43:105][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_418 (G8)
+[2016.12.24-01.36.43:113][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_419 (G8)
+[2016.12.24-01.36.43:115][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_420 (G8)
+[2016.12.24-01.36.43:117][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_421 (G8)
+[2016.12.24-01.36.43:119][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_422 (G8)
+[2016.12.24-01.36.43:121][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_423 (G8)
+[2016.12.24-01.36.43:122][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_424 (G8)
+[2016.12.24-01.36.43:124][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_425 (G8)
+[2016.12.24-01.36.43:125][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_426 (G8)
+[2016.12.24-01.36.43:126][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_427 (G8)
+[2016.12.24-01.36.43:128][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_428 (G8)
+[2016.12.24-01.36.43:129][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_429 (G8)
+[2016.12.24-01.36.43:130][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_430 (G8)
+[2016.12.24-01.36.43:132][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_431 (G8)
+[2016.12.24-01.36.43:133][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_432 (G8)
+[2016.12.24-01.36.43:134][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_433 (G8)
+[2016.12.24-01.36.43:136][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_434 (G8)
+[2016.12.24-01.36.43:137][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_435 (G8)
+[2016.12.24-01.36.43:138][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_436 (G8)
+[2016.12.24-01.36.43:140][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_437 (G8)
+[2016.12.24-01.36.43:141][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_438 (G8)
+[2016.12.24-01.36.43:143][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_439 (G8)
+[2016.12.24-01.36.43:144][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_440 (G8)
+[2016.12.24-01.36.43:145][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_441 (G8)
+[2016.12.24-01.36.43:146][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_442 (G8)
+[2016.12.24-01.36.43:148][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_443 (G8)
+[2016.12.24-01.36.43:149][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_444 (G8)
+[2016.12.24-01.36.43:151][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_445 (G8)
+[2016.12.24-01.36.43:152][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_446 (G8)
+[2016.12.24-01.36.43:154][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_447 (G8)
+[2016.12.24-01.36.43:155][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_448 (G8)
+[2016.12.24-01.36.43:156][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_449 (G8)
+[2016.12.24-01.36.43:157][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_450 (G8)
+[2016.12.24-01.36.43:159][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_451 (G8)
+[2016.12.24-01.36.43:160][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_452 (G8)
+[2016.12.24-01.36.43:162][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_453 (G8)
+[2016.12.24-01.36.43:163][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_454 (G8)
+[2016.12.24-01.36.43:164][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_455 (G8)
+[2016.12.24-01.36.43:166][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_456 (G8)
+[2016.12.24-01.36.43:167][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_457 (G8)
+[2016.12.24-01.36.43:168][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_458 (G8)
+[2016.12.24-01.36.43:170][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_459 (G8)
+[2016.12.24-01.36.43:171][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_460 (G8)
+[2016.12.24-01.36.43:172][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_461 (G8)
+[2016.12.24-01.36.43:174][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_462 (G8)
+[2016.12.24-01.36.43:175][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_463 (G8)
+[2016.12.24-01.36.43:176][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_464 (G8)
+[2016.12.24-01.36.43:178][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_465 (G8)
+[2016.12.24-01.36.43:179][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_466 (G8)
+[2016.12.24-01.36.43:181][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_467 (G8)
+[2016.12.24-01.36.43:182][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_468 (G8)
+[2016.12.24-01.36.43:183][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_469 (G8)
+[2016.12.24-01.36.43:185][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_470 (G8)
+[2016.12.24-01.36.43:186][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_471 (G8)
+[2016.12.24-01.36.43:187][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_472 (G8)
+[2016.12.24-01.36.43:189][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_473 (G8)
+[2016.12.24-01.36.43:190][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_474 (G8)
+[2016.12.24-01.36.43:192][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_475 (G8)
+[2016.12.24-01.36.43:193][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_476 (G8)
+[2016.12.24-01.36.43:194][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_477 (G8)
+[2016.12.24-01.36.43:196][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_478 (G8)
+[2016.12.24-01.36.43:197][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_479 (G8)
+[2016.12.24-01.36.43:198][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_480 (G8)
+[2016.12.24-01.36.43:200][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_481 (G8)
+[2016.12.24-01.36.43:201][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_482 (G8)
+[2016.12.24-01.36.43:202][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_483 (G8)
+[2016.12.24-01.36.43:203][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_484 (G8)
+[2016.12.24-01.36.43:205][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_485 (G8)
+[2016.12.24-01.36.43:206][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_486 (G8)
+[2016.12.24-01.36.43:207][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_487 (G8)
+[2016.12.24-01.36.43:209][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_488 (G8)
+[2016.12.24-01.36.43:210][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_489 (G8)
+[2016.12.24-01.36.43:211][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_490 (G8)
+[2016.12.24-01.36.43:212][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_491 (G8)
+[2016.12.24-01.36.43:214][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_492 (G8)
+[2016.12.24-01.36.43:215][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_493 (G8)
+[2016.12.24-01.36.43:216][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_494 (G8)
+[2016.12.24-01.36.43:218][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_495 (G8)
+[2016.12.24-01.36.43:219][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_496 (G8)
+[2016.12.24-01.36.43:221][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_497 (G8)
+[2016.12.24-01.36.43:222][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_498 (G8)
+[2016.12.24-01.36.43:224][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_499 (G8)
+[2016.12.24-01.36.43:225][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_500 (G8)
+[2016.12.24-01.36.43:227][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_501 (G8)
+[2016.12.24-01.36.43:228][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_502 (G8)
+[2016.12.24-01.36.43:230][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_503 (G8)
+[2016.12.24-01.36.43:231][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_504 (G8)
+[2016.12.24-01.36.43:233][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_505 (G8)
+[2016.12.24-01.36.43:234][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_506 (G8)
+[2016.12.24-01.36.43:236][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_507 (G8)
+[2016.12.24-01.36.43:238][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_508 (G8)
+[2016.12.24-01.36.43:239][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_509 (G8)
+[2016.12.24-01.36.43:241][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_510 (G8)
+[2016.12.24-01.36.43:243][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_511 (G8)
+[2016.12.24-01.36.43:244][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_512 (G8)
+[2016.12.24-01.36.43:245][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_513 (G8)
+[2016.12.24-01.36.43:247][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_514 (G8)
+[2016.12.24-01.36.43:248][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_515 (G8)
+[2016.12.24-01.36.43:250][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_516 (G8)
+[2016.12.24-01.36.43:252][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_517 (G8)
+[2016.12.24-01.36.43:253][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_518 (G8)
+[2016.12.24-01.36.43:255][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_519 (G8)
+[2016.12.24-01.36.43:256][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_520 (G8)
+[2016.12.24-01.36.43:257][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_521 (G8)
+[2016.12.24-01.36.43:258][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_522 (G8)
+[2016.12.24-01.36.43:260][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_523 (G8)
+[2016.12.24-01.36.43:261][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_524 (G8)
+[2016.12.24-01.36.43:263][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_525 (G8)
+[2016.12.24-01.36.43:264][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_526 (G8)
+[2016.12.24-01.36.43:265][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_527 (G8)
+[2016.12.24-01.36.43:266][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_528 (G8)
+[2016.12.24-01.36.43:268][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_529 (G8)
+[2016.12.24-01.36.43:269][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_530 (G8)
+[2016.12.24-01.36.43:270][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_531 (G8)
+[2016.12.24-01.36.43:272][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_532 (G8)
+[2016.12.24-01.36.43:273][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_533 (G8)
+[2016.12.24-01.36.43:274][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_534 (G8)
+[2016.12.24-01.36.43:275][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_535 (G8)
+[2016.12.24-01.36.43:277][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_536 (G8)
+[2016.12.24-01.36.43:278][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_537 (G8)
+[2016.12.24-01.36.43:280][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_538 (G8)
+[2016.12.24-01.36.43:281][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_539 (G8)
+[2016.12.24-01.36.43:282][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_540 (G8)
+[2016.12.24-01.36.43:284][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_541 (G8)
+[2016.12.24-01.36.43:285][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_542 (G8)
+[2016.12.24-01.36.43:287][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_543 (G8)
+[2016.12.24-01.36.43:288][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_544 (G8)
+[2016.12.24-01.36.43:290][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_545 (G8)
+[2016.12.24-01.36.43:291][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_546 (G8)
+[2016.12.24-01.36.43:292][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_547 (G8)
+[2016.12.24-01.36.43:294][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_548 (G8)
+[2016.12.24-01.36.43:295][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_549 (G8)
+[2016.12.24-01.36.43:296][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_550 (G8)
+[2016.12.24-01.36.43:297][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_551 (G8)
+[2016.12.24-01.36.43:299][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_552 (G8)
+[2016.12.24-01.36.43:300][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_553 (G8)
+[2016.12.24-01.36.43:301][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_554 (G8)
+[2016.12.24-01.36.43:303][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_555 (G8)
+[2016.12.24-01.36.43:304][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_556 (G8)
+[2016.12.24-01.36.43:305][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_557 (G8)
+[2016.12.24-01.36.43:307][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_558 (G8)
+[2016.12.24-01.36.43:308][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_559 (G8)
+[2016.12.24-01.36.43:309][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_560 (G8)
+[2016.12.24-01.36.43:311][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_561 (G8)
+[2016.12.24-01.36.43:312][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_562 (G8)
+[2016.12.24-01.36.43:313][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_563 (G8)
+[2016.12.24-01.36.43:315][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_564 (G8)
+[2016.12.24-01.36.43:316][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_565 (G8)
+[2016.12.24-01.36.43:317][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_566 (G8)
+[2016.12.24-01.36.43:319][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_567 (G8)
+[2016.12.24-01.36.43:320][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_568 (G8)
+[2016.12.24-01.36.43:322][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_569 (G8)
+[2016.12.24-01.36.43:322][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_570 (G8)
+[2016.12.24-01.36.43:324][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_571 (G8)
+[2016.12.24-01.36.43:325][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_572 (G8)
+[2016.12.24-01.36.43:326][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_573 (G8)
+[2016.12.24-01.36.43:328][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_574 (G8)
+[2016.12.24-01.36.43:329][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_575 (G8)
+[2016.12.24-01.36.43:331][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_576 (G8)
+[2016.12.24-01.36.43:332][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_577 (G8)
+[2016.12.24-01.36.43:333][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_578 (G8)
+[2016.12.24-01.36.43:334][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_579 (G8)
+[2016.12.24-01.36.43:336][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_580 (G8)
+[2016.12.24-01.36.43:337][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_581 (G8)
+[2016.12.24-01.36.43:339][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_582 (G8)
+[2016.12.24-01.36.43:341][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_583 (G8)
+[2016.12.24-01.36.43:342][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_584 (G8)
+[2016.12.24-01.36.43:344][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_585 (G8)
+[2016.12.24-01.36.43:345][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_586 (G8)
+[2016.12.24-01.36.43:346][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_587 (G8)
+[2016.12.24-01.36.43:348][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_588 (G8)
+[2016.12.24-01.36.43:349][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_589 (G8)
+[2016.12.24-01.36.43:350][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_590 (G8)
+[2016.12.24-01.36.43:352][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_591 (G8)
+[2016.12.24-01.36.43:353][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_592 (G8)
+[2016.12.24-01.36.43:355][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_593 (G8)
+[2016.12.24-01.36.43:357][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_594 (G8)
+[2016.12.24-01.36.43:360][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_595 (G8)
+[2016.12.24-01.36.43:361][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_596 (G8)
+[2016.12.24-01.36.43:363][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_597 (G8)
+[2016.12.24-01.36.43:364][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_598 (G8)
+[2016.12.24-01.36.43:366][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_599 (G8)
+[2016.12.24-01.36.43:367][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_600 (G8)
+[2016.12.24-01.36.43:369][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_601 (G8)
+[2016.12.24-01.36.43:372][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_602 (G8)
+[2016.12.24-01.36.43:374][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_603 (G8)
+[2016.12.24-01.36.43:376][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_604 (G8)
+[2016.12.24-01.36.43:377][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_605 (G8)
+[2016.12.24-01.36.43:378][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_606 (G8)
+[2016.12.24-01.36.43:380][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_607 (G8)
+[2016.12.24-01.36.43:381][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_608 (G8)
+[2016.12.24-01.36.43:383][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_609 (G8)
+[2016.12.24-01.36.43:384][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_610 (G8)
+[2016.12.24-01.36.43:385][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_611 (G8)
+[2016.12.24-01.36.43:386][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_612 (G8)
+[2016.12.24-01.36.43:388][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_613 (G8)
+[2016.12.24-01.36.43:390][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_614 (G8)
+[2016.12.24-01.36.43:391][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_615 (G8)
+[2016.12.24-01.36.43:393][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_616 (G8)
+[2016.12.24-01.36.43:394][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_617 (G8)
+[2016.12.24-01.36.43:395][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_618 (G8)
+[2016.12.24-01.36.43:397][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_619 (G8)
+[2016.12.24-01.36.43:398][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_620 (G8)
+[2016.12.24-01.36.43:399][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_621 (G8)
+[2016.12.24-01.36.43:401][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_622 (G8)
+[2016.12.24-01.36.43:402][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_623 (G8)
+[2016.12.24-01.36.43:403][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_624 (G8)
+[2016.12.24-01.36.43:405][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_625 (G8)
+[2016.12.24-01.36.43:406][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_626 (G8)
+[2016.12.24-01.36.43:408][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_627 (G8)
+[2016.12.24-01.36.43:409][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_628 (G8)
+[2016.12.24-01.36.43:411][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_629 (G8)
+[2016.12.24-01.36.43:412][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_630 (G8)
+[2016.12.24-01.36.43:413][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_631 (G8)
+[2016.12.24-01.36.43:414][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_632 (G8)
+[2016.12.24-01.36.43:416][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_633 (G8)
+[2016.12.24-01.36.43:417][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_634 (G8)
+[2016.12.24-01.36.43:419][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_635 (G8)
+[2016.12.24-01.36.43:421][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_636 (G8)
+[2016.12.24-01.36.43:422][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_637 (G8)
+[2016.12.24-01.36.43:424][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_638 (G8)
+[2016.12.24-01.36.43:425][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_639 (G8)
+[2016.12.24-01.36.43:427][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_640 (G8)
+[2016.12.24-01.36.43:428][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_641 (G8)
+[2016.12.24-01.36.43:429][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_642 (G8)
+[2016.12.24-01.36.43:430][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_643 (G8)
+[2016.12.24-01.36.43:432][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_644 (G8)
+[2016.12.24-01.36.43:433][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_645 (G8)
+[2016.12.24-01.36.43:434][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_646 (G8)
+[2016.12.24-01.36.43:436][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_647 (G8)
+[2016.12.24-01.36.43:437][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_648 (G8)
+[2016.12.24-01.36.43:439][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_649 (G8)
+[2016.12.24-01.36.43:440][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_650 (G8)
+[2016.12.24-01.36.43:442][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_651 (G8)
+[2016.12.24-01.36.43:443][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_652 (G8)
+[2016.12.24-01.36.43:444][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_653 (G8)
+[2016.12.24-01.36.43:446][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_654 (G8)
+[2016.12.24-01.36.43:447][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_655 (G8)
+[2016.12.24-01.36.43:450][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_656 (G8)
+[2016.12.24-01.36.43:451][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_657 (G8)
+[2016.12.24-01.36.43:453][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_658 (G8)
+[2016.12.24-01.36.43:455][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_659 (G8)
+[2016.12.24-01.36.43:456][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_660 (G8)
+[2016.12.24-01.36.43:457][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_661 (G8)
+[2016.12.24-01.36.43:459][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_662 (G8)
+[2016.12.24-01.36.43:460][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_663 (G8)
+[2016.12.24-01.36.43:462][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_664 (G8)
+[2016.12.24-01.36.43:463][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_665 (G8)
+[2016.12.24-01.36.43:464][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_666 (G8)
+[2016.12.24-01.36.43:465][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_667 (G8)
+[2016.12.24-01.36.43:467][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_668 (G8)
+[2016.12.24-01.36.43:468][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_669 (G8)
+[2016.12.24-01.36.43:469][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_670 (G8)
+[2016.12.24-01.36.43:471][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_671 (G8)
+[2016.12.24-01.36.43:472][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_672 (G8)
+[2016.12.24-01.36.43:474][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_673 (G8)
+[2016.12.24-01.36.43:475][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_674 (G8)
+[2016.12.24-01.36.43:475][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_675 (G8)
+[2016.12.24-01.36.43:476][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_676 (G8)
+[2016.12.24-01.36.43:477][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_677 (G8)
+[2016.12.24-01.36.43:479][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_678 (G8)
+[2016.12.24-01.36.43:479][  0]LogTexture:Display: Building textures: ShadowMapTexture2D_679 (G8)
+[2016.12.24-01.36.43:483][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2016.12.24-01.36.45:457][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.12.24-01.36.45:460][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.12.24-01.36.45:501][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.899ms to complete.
+[2016.12.24-01.36.45:501][  0]LogFileHelpers: Loading map 'Minimal_Default' took 37.766
+[2016.12.24-01.36.46:064][  0]LogCollectionManager: Loaded 0 collections in 0.000836 seconds
+[2016.12.24-01.36.46:548][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kyle/Colosseum/Saved/Collections/' took 0.01s
+[2016.12.24-01.36.46:548][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kyle/Colosseum/Content/Developers/kyle/Collections/' took 0.01s
+[2016.12.24-01.36.46:548][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kyle/Colosseum/Content/Collections/' took 0.01s
+[2016.12.24-01.36.46:548][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2016.12.24-01.36.46:561][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2047 classes and 369 folders.
+[2016.12.24-01.36.46:572][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.12.24-01.36.46:572][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.12.24-01.36.46:573][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.12.24-01.36.46:580][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.12.24-01.36.46:829][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2016.12.24-01.36.46:847][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.12.24-01.36.46:990][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.12.24-01.36.47:037][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.12.24-01.36.47:068][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.12.24-01.36.47:068][  0]LogLoad: Full Startup: 50.41 seconds (BP compile: 0.01 seconds)
+[2016.12.24-01.36.47:068][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.12.24-01.36.47:068][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.12.24-01.36.47:078][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.12.24-01.36.47:078][  0]LogOcInput: OculusInput pre-init called
+[2016.12.24-01.36.47:124][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.12.24-01.36.47:916][  0]LogRenderer: Reallocating scene render targets to support 1004x456 (Frame:2).
+[2016.12.24-01.36.55:514][  1]Cmd: UpdateLandscapeEditorData -warnings
+[2016.12.24-01.36.58:217][  3]LogAssetRegistry: Asset discovery search completed in 55.7930 seconds
+[2016.12.24-01.36.58:217][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000018 seconds (found 0 objects)
+[2016.12.24-01.36.58:217][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000050 seconds (updated 0 objects)
+[2016.12.24-01.37.08:376][506]SourceControl: Info On branch master
+[2016.12.24-01.37.08:376][506]SourceControl: Info Your branch is up-to-date with 'origin/master'.
+[2016.12.24-01.37.08:376][506]SourceControl: Info Changes not staged for commit:
+[2016.12.24-01.37.08:376][506]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2016.12.24-01.37.08:376][506]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2016.12.24-01.37.08:376][506]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
+[2016.12.24-01.37.08:376][506]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2016.12.24-01.37.08:376][506]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2016.12.24-01.37.08:376][506]SourceControl: Info 	modified:   Saved/Logs/Colluseum.log
+[2016.12.24-01.37.08:376][506]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_01_L_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_index_01_L_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_01_L_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thumb_01_L_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_01_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_01_L_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_index_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_index_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_01_L_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (thumb_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (thumb_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_01_L_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_middle_01_L_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_01_L_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_middle_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_middle_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_01_L_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_ring_01_L_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_01_L_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_ring_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_ring_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_01_L_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_pinky_01_L_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_04_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:744][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_01_L_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_pinky_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_pinky_03_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-hand_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (palm_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-forearm_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-forearm_01_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_junc_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-upper_arm_smth_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_01_R_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_index_01_R_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_01_R_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thumb_01_R_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_01_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_index_01_R_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_index_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_index_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thumb_01_R_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (thumb_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (thumb_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_01_R_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_middle_01_R_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_middle_01_R_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_middle_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_middle_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_01_R_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_ring_01_R_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_ring_01_R_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_ring_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_ring_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_01_R_02_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-f_pinky_01_R_tip_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-palm_04_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-f_pinky_01_R_01_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_pinky_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (f_pinky_03_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:745][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-hand_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (palm_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-forearm_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-forearm_01_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_junc_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-upper_arm_smth_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-toe_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-foot_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-toe_L_socket2_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (ORG-heel_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-shin_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-shin_01_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_junc_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thigh_smth_02_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-toe_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-foot_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-toe_R_socket2_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (ORG-heel_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-shin_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-shin_01_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_junc_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thigh_smth_02_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_stretch_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_nostr_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-upper_arm_stretch_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-hand_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-upper_arm_01_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_stretch_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-forearm_nostr_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-upper_arm_stretch_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-hand_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-upper_arm_01_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (toe_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-foot_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (toe_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-foot_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thigh_01_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_stretch_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_nostr_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thigh_stretch_ik_L_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (DEF-thigh_01_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_stretch_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:746][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:747][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-shin_nostr_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.37:747][723]LogSkeletalMesh:Warning: Reference Pose for joint (MCH-thigh_stretch_ik_R_end) includes NIL matrix. Zero scale isn't allowed on ref pose. 
+[2016.12.24-01.37.38:667][723]LogRenderer: Reallocating scene render targets to support 1004x700 (Frame:3982).
+[2016.12.24-01.37.53:135][578]LogEditorTransaction: Undo Rotate Bone
+[2016.12.24-01.38.03:900][171]LogEditorTransaction: Undo Rotate Bone
+[2016.12.24-01.38.25:223][313]LogRenderer: Reallocating scene render targets to support 1004x736 (Frame:9621).
+[2016.12.24-01.38.37:706][155]LogEditorTransaction: Undo Rotate Bone
+[2016.12.24-01.38.41:656][484]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/BodySculptWithHands_03__1__Skeleton2_Sequence.BodySculptWithHands_03__1__Skeleton2_Sequence
+[2016.12.24-01.38.42:735][484]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.12.24-01.38.52:361][ 20]LogEditorTransaction: Undo Rotate Bone
+[2016.12.24-01.41.35:903][596]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:/Users/kyle/Google Drive/DrakeSculptSpikedFin.fbx)
+[2016.12.24-01.41.35:937][596]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.12.24-01.41.35:937][596]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.12.24-01.41.35:937][596]LogFbx: ItemName: Model, ItemCount : 1
+[2016.12.24-01.41.35:947][596]LogFbx: Loading FBX Scene from C:/Users/kyle/Google Drive/DrakeSculptSpikedFin.fbx
+[2016.12.24-01.41.35:994][596]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.24-01.41.41:073][596]LogFbx: Loading FBX Scene from C:/Users/kyle/Google Drive/DrakeSculptSpikedFin.fbx
+[2016.12.24-01.41.41:120][596]LogFbx: FBX Scene Loaded Succesfully
+[2016.12.24-01.41.41:131][596]LogFbx:Warning: Triangulating static mesh Cube
+[2016.12.24-01.41.52:588][596]LogStaticMesh: Building static mesh DrakeSculptSpikedFin...
+[2016.12.24-01.41.54:239][596]LogStaticMesh: Built static mesh [1.65s] /Game/DrakeSculptSpikedFin.DrakeSculptSpikedFin
+[2016.12.24-01.41.54:788][596]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.12.24-01.42.06:386][943]LogActorFactory: Actor Factory created DrakeSculptSpikedFin
+[2016.12.24-01.42.08:181][ 94]LogActorFactory: Actor Factory created DrakeSculptSpikedFin
+[2016.12.24-01.43.17:175][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo2_Anim_Armature_ArmatureAction.boxo2_Anim_Armature_ArmatureAction
+[2016.12.24-01.43.17:179][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo2_Anim_Armature_CubeAction.boxo2_Anim_Armature_CubeAction
+[2016.12.24-01.43.17:182][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim.boxo_Anim
+[2016.12.24-01.43.17:186][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_Action.boxo_Anim_Cube_Action
+[2016.12.24-01.43.17:190][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_Action_001.boxo_Anim_Cube_Action_001
+[2016.12.24-01.43.17:193][177]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/boxo_Anim_Cube_CubeAction.boxo_Anim_Cube_CubeAction
+[2016.12.24-01.43.32:302][455]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'AnimPreviewInstance_5' or package '/Engine/Transient'.
+[2016.12.24-01.43.35:076][455]SourceControl: Info rm 'Content/boxo_Skeleton.uasset'
+[2016.12.24-01.43.35:698][455]SourceControl: Info rm 'Content/boxo_PhysicsAsset.uasset'
+[2016.12.24-01.43.36:327][455]SourceControl: Info rm 'Content/boxo_Anim_Cube_CubeAction.uasset'
+[2016.12.24-01.43.36:913][455]SourceControl: Info rm 'Content/boxo_Anim_Cube_Action_001.uasset'
+[2016.12.24-01.43.37:455][455]SourceControl: Info rm 'Content/boxo_Anim_Cube_Action.uasset'
+[2016.12.24-01.43.38:065][455]SourceControl: Info rm 'Content/boxo_Anim.uasset'
+[2016.12.24-01.43.38:638][455]SourceControl: Info rm 'Content/boxo2_Skeleton.uasset'
+[2016.12.24-01.43.39:155][455]SourceControl: Info rm 'Content/boxo2_PhysicsAsset.uasset'
+[2016.12.24-01.43.39:670][455]SourceControl: Info rm 'Content/boxo2_Anim_Armature_CubeAction.uasset'
+[2016.12.24-01.43.40:172][455]SourceControl: Info rm 'Content/boxo2_Anim_Armature_ArmatureAction.uasset'
+[2016.12.24-01.43.40:744][455]SourceControl: Info rm 'Content/boxo2.uasset'
+[2016.12.24-01.43.41:298][455]SourceControl: Info rm 'Content/boxo.uasset'
+[2016.12.24-01.44.24:660][524]Cmd: POLY SELECT ALL
+[2016.12.24-01.46.52:438][458]LogSavePackage: Save=4906.27ms
+[2016.12.24-01.46.52:438][458]LogSavePackage: Moving 'C:/Users/kyle/Colosseum/Saved/Minimal_Default_Auto1D093D6D84FE4B5ADA5A9E0993B668909.tmp' to 'C:/Users/kyle/Colosseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2016.12.24-01.46.52:442][458]LogSavePackage:Display: Finished SavePackage C:/Users/kyle/Colosseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2016.12.24-01.46.52:446][458]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.980
+[2016.12.24-01.46.52:447][458]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.980
+[2016.12.24-01.46.52:452][458]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/DrakeSculptSpikedFin] ([1] browsable assets)...
+[2016.12.24-01.46.52:475][458]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/DrakeSculptSpikedFin.DrakeSculptSpikedFin]
+[2016.12.24-01.46.52:475][458]OBJ SavePackage: Finished generating thumbnails for package [/Game/DrakeSculptSpikedFin]
+[2016.12.24-01.46.52:475][458]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DrakeSculptSpikedFin" FILE="C:/Users/kyle/Colosseum/Saved/Autosaves/Game/DrakeSculptSpikedFin_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.12.24-01.46.52:496][458]LogSavePackage: Save=19.44ms
+[2016.12.24-01.46.52:496][458]LogSavePackage: Moving 'C:/Users/kyle/Colosseum/Saved/DrakeSculptSpikedFin_Auto1408B1BF9482F6A6FCFFDA6A3F4741A21.tmp' to 'C:/Users/kyle/Colosseum/Saved/Autosaves/Game/DrakeSculptSpikedFin_Auto1.uasset'
+[2016.12.24-01.46.52:497][458]LogSavePackage:Display: Finished SavePackage C:/Users/kyle/Colosseum/Saved/Autosaves/Game/DrakeSculptSpikedFin_Auto1.uasset
+[2016.12.24-01.46.52:497][458]LogFileHelpers: Auto-saving content packages took 0.046
+[2016.12.24-01.47.04:087][944]LogActorFactory: Actor Factory created ring
+[2016.12.24-01.47.05:890][142]LogActorFactory: Actor Factory created ring
+[2016.12.24-01.47.08:637][445]LogActorFactory: Actor Factory created ring
+[2016.12.24-01.47.13:565][921]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (ring2)
+[2016.12.24-01.47.19:845][463]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2016.12.24-01.47.20:612][529]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (ring2)
+[2016.12.24-01.47.24:213][874]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.24-01.47.29:884][403]LogEditorViewport: Clicking on Actor (context menu): SkeletalMeshActor (fuck)
+[2016.12.24-01.56.57:454][884]LogSavePackage: Save=4587.48ms
+[2016.12.24-01.56.57:454][884]LogSavePackage: Moving 'C:/Users/kyle/Colosseum/Saved/Minimal_Default_Auto2244E1EBF4B923B0B78921EA5455E6E59.tmp' to 'C:/Users/kyle/Colosseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap'
+[2016.12.24-01.56.57:471][884]LogSavePackage:Display: Finished SavePackage C:/Users/kyle/Colosseum/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto2.umap
+[2016.12.24-01.56.57:473][884]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 4.658
+[2016.12.24-01.56.57:473][884]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 4.658
+[2016.12.24-01.59.18:106][ 98]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape)
+[2016.12.24-02.00.35:821][760]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Maps/Minimal_Default" FILE="C:/Users/kyle/Colosseum/Content/StarterContent/Maps/Minimal_Default.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.12.24-02.00.40:253][760]LogSavePackage: Save=4421.09ms
+[2016.12.24-02.00.40:253][760]LogSavePackage: Moving 'C:/Users/kyle/Colosseum/Saved/Minimal_Default0356A6B24684461D269C209279DF64DC.tmp' to 'C:/Users/kyle/Colosseum/Content/StarterContent/Maps/Minimal_Default.umap'
+[2016.12.24-02.00.40:266][760]LogSavePackage:Display: Finished SavePackage C:/Users/kyle/Colosseum/Content/StarterContent/Maps/Minimal_Default.umap
+[2016.12.24-02.00.40:286][760]LogFileHelpers: Saving map 'Minimal_Default' took 4.513
+[2016.12.24-02.00.40:301][760]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/DrakeSculptSpikedFin" FILE="C:/Users/kyle/Colosseum/Content/DrakeSculptSpikedFin.uasset" SILENT=true
+[2016.12
